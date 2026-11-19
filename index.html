@@ -1,0 +1,3384 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pelaksanaan Norma dalam Kehidupan Masyarakat | Pendidikan Pancasila Kelas 7 SMP Muhammadiyah 2 Surabaya</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts: Plus Jakarta Sans & Lora -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Plus Jakarta Sans', 'system-ui', '-apple-system', 'sans-serif'],
+            display: ['Plus Jakarta Sans', 'system-ui', '-apple-system', 'sans-serif'],
+            serif: ['Lora', 'Georgia', 'serif']
+          },
+          colors: {
+            muh: {
+              navy: '#1e3a8a',
+              blue: '#1d4ed8',
+              sage: '#4d7c63',
+              sageLight: '#659b7c',
+              gold: '#d97706',
+              cream: '#fdfbf7'
+            }
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    body {
+      background-color: #fdfbf7;
+      color: #0f172a;
+      overflow-x: hidden;
+    }
+
+    .font-display {
+      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    }
+
+    .font-serif-editorial {
+      font-family: 'Lora', Georgia, serif;
+    }
+
+    @keyframes fadeSlideUp {
+      from {
+        opacity: 0;
+        transform: translateY(8px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .stage-panel {
+      animation: fadeSlideUp 0.25s ease-out forwards;
+    }
+
+    .arcade-btn {
+      transition: all 0.14s cubic-bezier(0.4, 0, 0.2, 1);
+      box-shadow: 0 4px 0 rgba(30, 58, 138, 0.16);
+    }
+
+    .arcade-btn:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 0 rgba(30, 58, 138, 0.22);
+    }
+
+    .arcade-btn:active:not(:disabled) {
+      transform: translateY(2px);
+      box-shadow: 0 2px 0 rgba(30, 58, 138, 0.14);
+    }
+
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    .no-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+
+    .warm-grid {
+      background-image: radial-gradient(#cbd5e1 0.75px, transparent 0.75px);
+      background-size: 20px 20px;
+    }
+
+    @media print {
+      body {
+        background: #ffffff !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .print-sheet {
+        box-shadow: none !important;
+        border: 3px double #1e3a8a !important;
+        width: 100% !important;
+        margin: 0 !important;
+      }
+    }
+  </style>
+</head>
+<body class="min-h-screen flex flex-col warm-grid">
+
+  <!-- ==================== NOTIFIKASI TOAST (PENGGANTI ALERT) ==================== -->
+  <div id="toastStack" class="fixed bottom-4 right-4 z-50 flex flex-col gap-2 max-w-sm w-full pointer-events-none px-4 sm:px-0"></div>
+
+  <!-- ==================== HEADER RESMI SMP MUHAMMADIYAH 2 SURABAYA ==================== -->
+  <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-2xs no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+      <div class="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-3">
+
+        <!-- Kiri: Logo SVG Presisi SMP Muhammadiyah 2 Surabaya + Identitas Mapel -->
+        <div class="flex items-center gap-3.5">
+          <div class="flex-shrink-0 bg-white px-2.5 py-1.5 rounded-2xl border border-slate-200 shadow-2xs">
+            <svg width="92" height="72" viewBox="0 0 240 185" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Logo Resmi SMP Muhammadiyah 2 Surabaya">
+              <!-- Matahari Muhammadiyah Biru Tua (#1e3a8a) Bersinar 12 Penjuru -->
+              <g transform="translate(66, 56)">
+                <g stroke="#1e3a8a" stroke-width="2.7" stroke-linecap="round">
+                  <line x1="0" y1="-48" x2="0" y2="-23" />
+                  <line x1="24" y1="-41.5" x2="11.5" y2="-19.9" />
+                  <line x1="41.5" y1="-24" x2="19.9" y2="-11.5" />
+                  <line x1="48" y1="0" x2="23" y2="0" />
+                  <line x1="41.5" y1="24" x2="19.9" y2="11.5" />
+                  <line x1="24" y1="41.5" x2="11.5" y2="19.9" />
+                  <line x1="0" y1="48" x2="0" y2="23" />
+                  <line x1="-24" y1="41.5" x2="-11.5" y2="19.9" />
+                  <line x1="-41.5" y1="24" x2="-19.9" y2="11.5" />
+                  <line x1="-48" y1="0" x2="-23" y2="0" />
+                  <line x1="-41.5" y1="-24" x2="-19.9" y2="-11.5" />
+                  <line x1="-24" y1="-41.5" x2="-11.5" y2="-19.9" />
+                </g>
+                <g stroke="#1e3a8a" stroke-width="1.6" stroke-linecap="round">
+                  <line x1="11.5" y1="-42" x2="6.5" y2="-23.5" />
+                  <line x1="31.5" y1="-31.5" x2="17.5" y2="-17.5" />
+                  <line x1="42" y1="-11.5" x2="23.5" y2="-6.5" />
+                  <line x1="42" y1="11.5" x2="23.5" y2="6.5" />
+                  <line x1="31.5" y1="31.5" x2="17.5" y2="17.5" />
+                  <line x1="11.5" y1="42" x2="6.5" y2="23.5" />
+                  <line x1="-11.5" y1="42" x2="-6.5" y2="23.5" />
+                  <line x1="-31.5" y1="31.5" x2="-17.5" y2="17.5" />
+                  <line x1="-42" y1="11.5" x2="-23.5" y2="6.5" />
+                  <line x1="-42" y1="-11.5" x2="-23.5" y2="-6.5" />
+                  <line x1="-31.5" y1="-31.5" x2="-17.5" y2="-17.5" />
+                  <line x1="-11.5" y1="-42" x2="-6.5" y2="-23.5" />
+                </g>
+                <circle cx="0" cy="0" r="21" fill="#ffffff" stroke="#1e3a8a" stroke-width="2.5" />
+                <path d="M-12 3 C-9 -6, -3 -7, 0 -1 C3 -8, 9 -6, 12 2 M-9 8 L9 8 M-5 -9 L5 -9 M0 -12 L0 12" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" />
+              </g>
+
+              <!-- Mimbar / Kitab Emas (#d97706) -->
+              <path d="M29 74 L40 100 L58 100 L58 84 C58 79, 74 79, 74 84 L74 100 L92 100 L103 74 L96 74 L89 90 L79 90 L79 77 C79 71, 53 71, 53 77 L53 90 L43 90 L36 74 Z" fill="#d97706" stroke="#1e3a8a" stroke-width="1.2" stroke-linejoin="round" />
+
+              <!-- Tulisan "SMP" Tebal Biru Tua (#1e3a8a) -->
+              <text x="122" y="60" fill="#1e3a8a" font-family="Plus Jakarta Sans, Arial, sans-serif" font-weight="800" font-size="47" letter-spacing="-1">SMP</text>
+
+              <!-- Lengkung Buku Terbuka Hijau Sage (#4d7c63) -->
+              <path d="M10 68 C26 105, 62 112, 98 131 C76 108, 41 99, 10 68 Z" fill="#4d7c63" />
+              <path d="M14 91 C34 119, 67 122, 98 140 C70 120, 39 115, 14 91 Z" fill="#659b7c" opacity="0.88" />
+              <path d="M230 65 C200 98, 142 85, 98 118 C144 97, 198 110, 230 65 Z" fill="#4d7c63" />
+              <path d="M226 86 C195 116, 142 102, 98 131 C144 112, 195 124, 226 86 Z" fill="#659b7c" opacity="0.88" />
+
+              <!-- Teks "MUHAMMADIYAH 2" & "SURABAYA" -->
+              <text x="120" y="161" text-anchor="middle" fill="#1e3a8a" font-family="Plus Jakarta Sans, Arial, sans-serif" font-weight="800" font-size="22.5" letter-spacing="0.4">MUHAMMADIYAH 2</text>
+              <text x="120" y="179" text-anchor="middle" fill="#1e3a8a" font-family="Plus Jakarta Sans, Arial, sans-serif" font-weight="800" font-size="14" letter-spacing="8">SURABAYA</text>
+            </svg>
+          </div>
+
+          <div>
+            <div class="flex flex-wrap items-center gap-1.5">
+              <span class="px-2.5 py-0.5 rounded-full bg-muh-navy text-white text-[11px] font-extrabold uppercase tracking-wider">
+                SMP MUHAMMADIYAH 2 SURABAYA
+              </span>
+              <span class="px-2.5 py-0.5 rounded-full bg-emerald-50 text-muh-sage text-[11px] font-extrabold border border-emerald-200">
+                Kurikulum Merdeka Fase D
+              </span>
+            </div>
+            <h1 class="font-display font-extrabold text-base sm:text-lg text-slate-900 mt-1 leading-snug">
+              Pendidikan Pancasila — Kelas VII Paralel (7A–7G)
+            </h1>
+            <p class="text-xs sm:text-sm text-slate-600 flex flex-wrap items-center gap-x-2">
+              <span>Materi: <strong class="text-slate-800">Pelaksanaan Norma dalam Kehidupan Masyarakat</strong></span>
+              <span class="text-slate-300">•</span>
+              <span>Guru Pengampu: <strong class="text-muh-navy">Drs. Bunyani</strong></span>
+            </p>
+          </div>
+        </div>
+
+        <!-- Kanan: Tombol Beralih Ruang Belajar Murid & Dashboard Rekap Guru -->
+        <div class="flex items-center gap-2 bg-slate-100 p-1.5 rounded-2xl border border-slate-200 self-start lg:self-center">
+          <button
+            type="button"
+            id="navBtnStudent"
+            data-action="switch-view"
+            data-mode="student"
+            onclick="window.switchView('student')"
+            class="flex items-center gap-2 px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all bg-muh-navy text-white shadow-xs cursor-pointer"
+          >
+            <span>🎓 Ruang Belajar Murid</span>
+          </button>
+
+          <button
+            type="button"
+            id="navBtnTeacher"
+            data-action="switch-view"
+            data-mode="teacher"
+            onclick="window.switchView('teacher')"
+            class="flex items-center gap-2 px-3.5 py-2.5 rounded-xl text-xs sm:text-sm font-bold transition-all text-slate-700 hover:text-slate-950 cursor-pointer"
+          >
+            <span>📊 Dashboard Rekap Guru</span>
+            <span id="headerRecapBadge" class="px-2 py-0.5 rounded-full bg-amber-500 text-white text-[11px] font-extrabold">0</span>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== KONTEN UTAMA ==================== -->
+  <main class="flex-1 max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-6">
+
+    <!-- ======================================================================= -->
+    <!-- MODE 1: RUANG BELAJAR MURID (5 TAHAP PEMBELAJARAN MENDALAM)             -->
+    <!-- ======================================================================= -->
+    <div id="studentWorkspace" class="space-y-6">
+
+      <!-- Kartu Identitas Peserta Didik Kelas VII Paralel (7A - 7G) -->
+      <section class="bg-white rounded-3xl border border-slate-200 p-5 sm:p-6 shadow-2xs no-print">
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-3 pb-4 border-b border-slate-100">
+          <div>
+            <span class="text-xs font-extrabold uppercase tracking-wider text-muh-gold">Identitas Peserta Didik Kelas VII Paralel (7A–7G)</span>
+            <h2 class="font-display font-bold text-lg text-slate-900">Data Diri Murid SMP Muhammadiyah 2 Surabaya</h2>
+          </div>
+          <div class="flex flex-wrap items-center gap-2">
+            <span id="studentCloudSyncBadge" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-2xl bg-slate-100 border border-slate-200 text-slate-700 text-xs font-extrabold">
+              ☁️ Mode Lokal
+            </span>
+            <button
+              type="button"
+              id="studentQueuePill"
+              data-action="flush-gas-queue"
+              class="hidden inline-flex items-center gap-1.5 px-3 py-1.5 rounded-2xl bg-amber-100 border border-amber-300 text-amber-900 hover:bg-amber-200 text-xs font-extrabold transition cursor-pointer"
+              title="Klik untuk mengirim ulang data yang tertunda di antrean offline"
+            >
+              ⏳ Antrean Offline: 0
+            </button>
+            <div id="studentStatusPill" class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-2xl bg-amber-50 border border-amber-200 text-amber-900 text-xs font-bold">
+              <span class="w-2.5 h-2.5 rounded-full bg-amber-500 animate-pulse"></span>
+              <span>Belum tersimpan • Progres 20% — Lengkapi Nama, Kelas (7A–7G) & Presensi</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================== -->
+      <!-- TAHAP 2: BERMAKNA (4 PILAR NORMA, 4 MODUL & MINI-SIMULASI)            -->
+      <!-- ===================================================================== -->
+      <section id="stagePanel2" class="hidden stage-panel space-y-6">
+
+        <!-- BAGIAN 2A: EKSPLORASI INTERAKTIF 4 PILAR NORMA -->
+        <div class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-2xs space-y-5">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-3 pb-4 border-b border-slate-100">
+            <div>
+              <span class="inline-block px-3 py-1 rounded-full bg-emerald-50 text-muh-sage border border-emerald-200 text-xs font-extrabold uppercase tracking-wide mb-1.5">
+                TAHAP 2 • BERMAKNA (MEANINGFUL LEARNING)
+              </span>
+              <h2 class="font-display font-extrabold text-xl sm:text-2xl text-slate-900">
+                Eksplorasi Interaktif 4 Pilar Norma dalam Kehidupan Masyarakat
+              </h2>
+              <p class="text-xs sm:text-sm text-slate-600 mt-0.5">
+                Klik setiap kartu pilar norma di bawah ini untuk membedah <strong>Sumber Norma, Sifat &amp; Sanksi, Contoh Nyata di SMP Muhammadiyah 2 Surabaya &amp; Kota Surabaya, dan Dampak Pelanggaran</strong>!
+              </p>
+            </div>
+            <div class="flex items-center gap-2 bg-slate-100 px-3.5 py-2 rounded-2xl text-xs font-bold text-slate-700 self-start md:self-center">
+              <span>Modul Dipahami:</span>
+              <span id="moduleProgressBadge" class="px-2.5 py-0.5 rounded-lg bg-muh-sage text-white font-extrabold">0 / 4</span>
+            </div>
+          </div>
+
+          <!-- 4 Kartu Pilar Norma -->
+          <div id="normPillarsGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3"></div>
+
+          <!-- Panel Detail Pilar Norma Terpilih -->
+          <div id="normPillarDetailBox" class="rounded-3xl border-2 border-muh-navy bg-gradient-to-br from-blue-50/70 via-white to-emerald-50/50 p-6 shadow-xs space-y-4"></div>
+        </div>
+
+        <!-- BAGIAN 2B: 4 MODUL BACAAN TERSTRUKTUR -->
+        <div class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-2xs space-y-5">
+          <div>
+            <span class="text-xs font-extrabold uppercase tracking-wider text-muh-navy">Pendalaman Materi Terstruktur</span>
+            <h3 class="font-display font-extrabold text-xl text-slate-900">4 Modul Pelaksanaan Norma dalam Kehidupan Masyarakat</h3>
+            <p class="text-xs sm:text-sm text-slate-500">Klik tiap modul untuk membaca uraian materinya lalu klik tombol <strong>"✓ Tandai Sudah Dipahami"</strong>.</p>
+          </div>
+
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2.5">
+            <button type="button" data-action="select-module" data-mod="1" id="modTabBtn1" class="p-3.5 rounded-2xl border-2 border-muh-navy bg-blue-50/70 text-left transition cursor-pointer">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-extrabold text-muh-navy">MODUL 1</span>
+                <span id="modCheckIcon1" class="text-xs font-extrabold text-slate-400">○</span>
+              </div>
+              <div class="font-display font-bold text-xs sm:text-sm text-slate-900 mt-1">Hakikat &amp; Fungsi Norma Bermasyarakat</div>
+            </button>
+
+            <button type="button" data-action="select-module" data-mod="2" id="modTabBtn2" class="p-3.5 rounded-2xl border-2 border-slate-200 hover:border-muh-navy text-left transition cursor-pointer">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-extrabold text-muh-sage">MODUL 2</span>
+                <span id="modCheckIcon2" class="text-xs font-extrabold text-slate-400">○</span>
+              </div>
+              <div class="font-display font-bold text-xs sm:text-sm text-slate-900 mt-1">Empat Macam Norma &amp; Hierarki Sanksi</div>
+            </button>
+
+            <button type="button" data-action="select-module" data-mod="3" id="modTabBtn3" class="p-3.5 rounded-2xl border-2 border-slate-200 hover:border-muh-navy text-left transition cursor-pointer">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-extrabold text-muh-gold">MODUL 3</span>
+                <span id="modCheckIcon3" class="text-xs font-extrabold text-slate-400">○</span>
+              </div>
+              <div class="font-display font-bold text-xs sm:text-sm text-slate-900 mt-1">Negara Hukum &amp; UUD NRI Tahun 1945</div>
+            </button>
+
+            <button type="button" data-action="select-module" data-mod="4" id="modTabBtn4" class="p-3.5 rounded-2xl border-2 border-slate-200 hover:border-muh-navy text-left transition cursor-pointer">
+              <div class="flex items-center justify-between">
+                <span class="text-[11px] font-extrabold text-indigo-700">MODUL 4</span>
+                <span id="modCheckIcon4" class="text-xs font-extrabold text-slate-400">○</span>
+              </div>
+              <div class="font-display font-bold text-xs sm:text-sm text-slate-900 mt-1">Pembiasaan Norma di Sekolah &amp; Negara</div>
+            </button>
+          </div>
+
+          <div id="activeModuleDisplay" class="p-5 sm:p-6 rounded-2xl bg-slate-50/90 border border-slate-200 space-y-4"></div>
+        </div>
+
+        <!-- BAGIAN 2C: MINI-SIMULASI INTERAKTIF UJI KLASIFIKASI NORMA & SANKSI -->
+        <div class="bg-white rounded-3xl border border-slate-200 p-6 sm:p-8 shadow-2xs space-y-4">
+          <div>
+            <span class="text-xs font-extrabold uppercase tracking-wider text-muh-gold">Laboratorium Analisis Norma</span>
+            <h3 class="font-display font-extrabold text-xl text-slate-900">Uji Klasifikasi Norma &amp; Sanksi (3 Studi Kasus Kontekstual)</h3>
+            <p class="text-xs sm:text-sm text-slate-500">Pilih jenis norma dan sanksi yang paling tepat untuk setiap skenario nyata di sekolah dan Kota Surabaya:</p>
+          </div>
+
+          <div id="miniSimCasesContainer" class="grid grid-cols-1 md:grid-cols-3 gap-4"></div>
+
+          <div class="flex flex-wrap items-center justify-between gap-3 pt-4 border-t border-slate-100">
+            <button
+              type="button"
+              data-action="go-stage"
+              data-stage="1"
+              class="px-5 py-3 rounded-2xl border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 font-bold text-sm transition cursor-pointer"
+            >
+              ← Tahap 1
+            </button>
+
+            <button
+              type="button"
+              data-action="go-stage"
+              data-stage="3"
+              class="px-6 py-3.5 rounded-2xl bg-muh-sage hover:opacity-95 text-white font-extrabold text-sm shadow-xs transition flex items-center gap-2 cursor-pointer"
+            >
+              <span>Lanjut ke Tahap 3: LKPD →</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================== -->
+      <!-- TAHAP 3: MENGAPLIKASI (LKPD TERPADU 25 BUTIR SOAL = 100 POIN)         -->
+      <!-- ===================================================================== -->
+      <section id="stagePanel3" class="hidden stage-panel space-y-6">
+        <!-- Header Status, Filter Bagian & Navigasi Nomor Soal -->
+        <div class="bg-white rounded-3xl border border-slate-200 p-5 shadow-2xs space-y-4">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-3">
+            <div>
+              <span class="px-3 py-1 rounded-full bg-amber-100 text-amber-900 text-xs font-extrabold uppercase tracking-wider">
+                TAHAP 3 • MENGAPLIKASI (LKPD TERPADU 25 SOAL = 100 POIN)
+              </span>
+              <h2 class="font-display font-extrabold text-xl sm:text-2xl text-slate-900 mt-1.5">
+                Lembar Kerja Murid: Pelaksanaan Norma dalam Kehidupan Masyarakat
+              </h2>
+            </div>
+
+            <div class="flex flex-wrap items-center gap-2.5 self-start md:self-center">
+              <div class="px-3.5 py-2 rounded-2xl bg-blue-50 border border-blue-200 text-xs font-bold text-muh-navy flex items-center gap-1.5">
+                <span>⏱️ Waktu:</span>
+                <span id="lkpdTimerText" class="font-display font-extrabold text-sm">00:00</span>
+              </div>
+              <div class="px-3.5 py-2 rounded-2xl bg-emerald-50 border border-emerald-200 text-xs font-bold text-muh-sage">
+                Terjawab: <span id="lkpdAnsweredCount" class="font-extrabold">0</span> / 25
+              </div>
+            </div>
+          </div>
+
+          <!-- Filter Tampilan Bagian -->
+          <div class="flex flex-wrap gap-2 pt-2 border-t border-slate-100">
+            <button type="button" data-action="filter-lkpd" data-part="ALL" id="lkpdTab_ALL" class="px-3.5 py-2 rounded-xl bg-muh-navy text-white text-xs font-extrabold transition cursor-pointer">
+              Semua Bagian (25 Soal)
+            </button>
+            <button type="button" data-action="filter-lkpd" data-part="A" id="lkpdTab_A" class="px-3.5 py-2 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 text-xs font-extrabold transition cursor-pointer">
+              Bagian A: PG Studi Kasus C1–C6 (10 Soal)
+            </button>
+            <button type="button" data-action="filter-lkpd" data-part="B" id="lkpdTab_B" class="px-3.5 py-2 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 text-xs font-extrabold transition cursor-pointer">
+              Bagian B: Benar/Salah Literasi &amp; Numerasi (10 Soal)
+            </button>
+            <button type="button" data-action="filter-lkpd" data-part="C" id="lkpdTab_C" class="px-3.5 py-2 rounded-xl bg-slate-100 text-slate-700 hover:bg-slate-200 text-xs font-extrabold transition cursor-pointer">
+              Bagian C: Isian Singkat (5 Soal)
+            </button>
+          </div>
+
+          <div>
+            <div class="text-[11px] font-bold text-slate-500 mb-1.5">Navigasi Nomor Soal (Klik nomor untuk melompat langsung ke soal):</div>
+            <div id="questionNavGrid" class="flex flex-wrap gap-1.5"></div>
+          </div>
+        </div>
+
+        <!-- ==================== BAGIAN A: 10 SOAL PILIHAN GANDA STUDI KASUS (C1-C6) ==================== -->
+        <div id="lkpdSectionA" class="space-y-4">
+          <div class="bg-gradient-to-r from-muh-navy to-blue-800 text-white rounded-2xl p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <h3 class="font-display font-extrabold text-base sm:text-lg">
+                BAGIAN A: 10 Soal Pilihan Ganda Studi Kasus Kontekstual (Level Kognitif C1 – C6)
+              </h3>
+              <p class="text-xs text-blue-100">
+                Analisislah setiap studi kasus pelaksanaan norma di SMP Muhammadiyah 2 Surabaya &amp; Kota Surabaya berikut, lalu pilih satu jawaban paling tepat!
+              </p>
+            </div>
+            <span class="px-3 py-1 rounded-xl bg-white/15 text-xs font-extrabold self-start sm:self-center">10 Butir • 40 Poin</span>
+          </div>
+
+          <div id="bagianAContainer" class="space-y-4"></div>
+        </div>
+
+        <!-- ==================== BAGIAN B: 10 SOAL BENAR / SALAH LITERASI & NUMERASI ==================== -->
+        <div id="lkpdSectionB" class="space-y-4 pt-2">
+          <div class="bg-gradient-to-r from-muh-sage to-emerald-700 text-white rounded-2xl p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <h3 class="font-display font-extrabold text-base sm:text-lg">
+                BAGIAN B: 10 Soal Benar / Salah Berbasis Literasi dan Numerasi
+              </h3>
+              <p class="text-xs text-emerald-100">
+                Cermati stimulus literasi &amp; grafik numerasi survei kepatuhan norma pada 280 murid kelas 7A–7G sebelum memilih BENAR atau SALAH!
+              </p>
+            </div>
+            <span class="px-3 py-1 rounded-xl bg-white/15 text-xs font-extrabold self-start sm:self-center">10 Butir • 30 Poin</span>
+          </div>
+
+          <!-- Stimulus Literasi & Stimulus Numerasi (Grafik Batang SVG + Tabel Data 280 Murid) -->
+          <div class="bg-white rounded-3xl border-2 border-emerald-200 p-6 shadow-2xs space-y-5">
+            <div class="flex flex-wrap items-center justify-between gap-2 border-b border-slate-100 pb-3">
+              <div>
+                <span class="text-xs font-extrabold uppercase tracking-wider text-muh-sage">Stimulus Literasi &amp; Infografis Data Numerasi</span>
+                <h4 class="font-display font-extrabold text-lg text-slate-900 mt-0.5">
+                  Survei Kepatuhan Pelaksanaan Norma Harian Murid Kelas VII (7A–7G) SMP Muhammadiyah 2 Surabaya
+                </h4>
+              </div>
+              <span class="px-3 py-1.5 rounded-xl bg-emerald-50 border border-emerald-200 text-xs font-extrabold text-muh-sage">
+                Total Responden = 280 Murid (7 Kelas × 40 Murid)
+              </span>
+            </div>
+
+            <!-- Teks Literasi -->
+            <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 font-serif-editorial text-xs sm:text-sm text-slate-700 leading-relaxed space-y-2.5">
+              <p>
+                <strong>Stimulus Literasi:</strong> Sebagai wujud pembinaan karakter pelajar berkemajuan di <strong>SMP Muhammadiyah 2 Surabaya</strong>, pembiasaan pelaksanaan empat macam norma (Norma Agama, Norma Kesusilaan, Norma Kesopanan, dan Norma Hukum) diterapkan secara terpadu di lingkungan sekolah maupun ruang publik Kota Pahlawan. Keempat norma tersebut saling melengkapi: <strong>Norma Agama</strong> membimbing keimanan dan ibadah; <strong>Norma Kesusilaan</strong> menumbuhkan kejujuran suara hati nurani; <strong>Norma Kesopanan</strong> menjaga tata krama pergaulan dengan sanksi teguran atau cemoohan sosial; sedangkan <strong>Norma Hukum</strong> menegakkan kepastian dan keadilan sosial sebagaimana diamanatkan <strong>Pasal 1 Ayat (3)</strong> dan <strong>Pasal 27 Ayat (1) UUD NRI Tahun 1945</strong> melalui sanksi tegas yang memaksa.
+              </p>
+              <p>
+                Pada awal semester, Tim Kesiswaan bersama pengurus Pimpinan Ranting Ikatan Pelajar Muhammadiyah (PR IPM) mengadakan survei konsistensi pelaksanaan norma harian terhadap seluruh murid kelas VII paralel (<strong>7A, 7B, 7C, 7D, 7E, 7F, dan 7G</strong>) yang masing-masing berjumlah <strong>40 murid</strong> (total <strong>280 murid</strong>).
+              </p>
+            </div>
+
+            <!-- Grafik Batang SVG + Tabel Data Survei 280 Murid -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-5 items-center">
+              <div class="lg:col-span-7 p-4 rounded-2xl bg-slate-50/80 border border-slate-200 space-y-2">
+                <div class="text-xs font-extrabold uppercase text-slate-700">
+                  Stimulus Numerasi — Grafik Batang SVG Kepatuhan Norma (N = 280 Murid Kelas 7A–7G):
+                </div>
+                <svg viewBox="0 0 560 215" class="w-full h-auto" role="img" aria-label="Grafik Batang Survei Kepatuhan Norma 280 Murid Kelas 7A-7G">
+                  <line x1="190" y1="20" x2="190" y2="180" stroke="#cbd5e1" stroke-width="1.5" />
+                  <line x1="265" y1="20" x2="265" y2="180" stroke="#e2e8f0" stroke-dasharray="3 3" />
+                  <line x1="340" y1="20" x2="340" y2="180" stroke="#e2e8f0" stroke-dasharray="3 3" />
+                  <line x1="415" y1="20" x2="415" y2="180" stroke="#e2e8f0" stroke-dasharray="3 3" />
+                  <line x1="490" y1="20" x2="490" y2="180" stroke="#e2e8f0" stroke-dasharray="3 3" />
+
+                  <!-- Tepat Waktu & Shalat Berjamaah: 90% (252 murid) -> 0.90 * 300 = 270 -->
+                  <text x="182" y="42" text-anchor="end" fill="#0f172a" font-size="10.5" font-weight="700">Tepat Waktu &amp; Shalat</text>
+                  <rect x="190" y="27" width="270" height="22" rx="6" fill="#1e3a8a" />
+                  <text x="466" y="42" fill="#1e3a8a" font-size="11" font-weight="800">90% (252)</text>
+
+                  <!-- Santun Bertutur Kata: 85% (238 murid) -> 0.85 * 300 = 255 -->
+                  <text x="182" y="82" text-anchor="end" fill="#0f172a" font-size="10.5" font-weight="700">Santun Bertutur Kata</text>
+                  <rect x="190" y="67" width="255" height="22" rx="6" fill="#4d7c63" />
+                  <text x="451" y="82" fill="#4d7c63" font-size="11" font-weight="800">85% (238)</text>
+
+                  <!-- Tertib Antre Kantin: 80% (224 murid) -> 0.80 * 300 = 240 -->
+                  <text x="182" y="122" text-anchor="end" fill="#0f172a" font-size="10.5" font-weight="700">Tertib Antre Kantin</text>
+                  <rect x="190" y="107" width="240" height="22" rx="6" fill="#d97706" />
+                  <text x="436" y="122" fill="#d97706" font-size="11" font-weight="800">80% (224)</text>
+
+                  <!-- Disiplin Tata Tertib & Lalu Lintas: 75% (210 murid) -> 0.75 * 300 = 225 -->
+                  <text x="182" y="162" text-anchor="end" fill="#0f172a" font-size="10.5" font-weight="700">Tata Tertib &amp; Lalu Lintas</text>
+                  <rect x="190" y="147" width="225" height="22" rx="6" fill="#4f46e5" />
+                  <text x="421" y="162" fill="#4f46e5" font-size="11" font-weight="800">75% (210)</text>
+
+                  <!-- Axis labels -->
+                  <text x="190" y="198" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">0%</text>
+                  <text x="265" y="198" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">25%</text>
+                  <text x="340" y="198" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">50%</text>
+                  <text x="415" y="198" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">75%</text>
+                  <text x="490" y="198" text-anchor="middle" fill="#64748b" font-size="10" font-weight="700">100%</text>
+                </svg>
+              </div>
+
+              <div class="lg:col-span-5 overflow-x-auto">
+                <table class="w-full text-xs border border-slate-200 rounded-xl overflow-hidden">
+                  <thead class="bg-slate-100 text-slate-700 font-extrabold">
+                    <tr>
+                      <th class="py-2.5 px-3 text-left">Indikator Kepatuhan</th>
+                      <th class="py-2.5 px-2 text-center">Persen</th>
+                      <th class="py-2.5 px-2 text-center">Patuh</th>
+                      <th class="py-2.5 px-2 text-center">Belum</th>
+                    </tr>
+                  </thead>
+                  <tbody class="divide-y divide-slate-200 bg-white">
+                    <tr>
+                      <td class="py-2.5 px-3 font-semibold">Tepat Waktu &amp; Shalat Berjamaah</td>
+                      <td class="py-2.5 px-2 text-center font-bold text-muh-navy">90%</td>
+                      <td class="py-2.5 px-2 text-center">252</td>
+                      <td class="py-2.5 px-2 text-center text-slate-500">28</td>
+                    </tr>
+                    <tr>
+                      <td class="py-2.5 px-3 font-semibold">Santun Bertutur Kata</td>
+                      <td class="py-2.5 px-2 text-center font-bold text-muh-sage">85%</td>
+                      <td class="py-2.5 px-2 text-center">238</td>
+                      <td class="py-2.5 px-2 text-center text-slate-500">42</td>
+                    </tr>
+                    <tr>
+                      <td class="py-2.5 px-3 font-semibold">Tertib Antre Kantin</td>
+                      <td class="py-2.5 px-2 text-center font-bold text-muh-gold">80%</td>
+                      <td class="py-2.5 px-2 text-center">224</td>
+                      <td class="py-2.5 px-2 text-center text-slate-500">56</td>
+                    </tr>
+                    <tr>
+                      <td class="py-2.5 px-3 font-semibold">Disiplin Tata Tertib &amp; Lalu Lintas</td>
+                      <td class="py-2.5 px-2 text-center font-bold text-indigo-700">75%</td>
+                      <td class="py-2.5 px-2 text-center">210</td>
+                      <td class="py-2.5 px-2 text-center text-rose-600 font-bold">70</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+
+          <div id="bagianBContainer" class="space-y-3"></div>
+        </div>
+
+        <!-- ==================== BAGIAN C: 5 SOAL ISIAN SINGKAT (30 POIN) ==================== -->
+        <div id="lkpdSectionC" class="space-y-4 pt-2">
+          <div class="bg-gradient-to-r from-amber-600 to-muh-gold text-white rounded-2xl p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-2">
+            <div>
+              <h3 class="font-display font-extrabold text-base sm:text-lg">
+                BAGIAN C: 5 Soal Isian Singkat Pelaksanaan Norma dalam Kehidupan Masyarakat
+              </h3>
+              <p class="text-xs text-amber-100">
+                Isilah titik-titik dengan konsep norma, sumber norma, atau pasal UUD NRI Tahun 1945 yang tepat!
+              </p>
+            </div>
+            <span class="px-3 py-1 rounded-xl bg-white/15 text-xs font-extrabold self-start sm:self-center">5 Butir • 30 Poin</span>
+          </div>
+
+          <div id="bagianCContainer" class="space-y-4"></div>
+        </div>
+
+        <!-- Kartu Hasil Koreksi Otomatis LKPD 25 Soal -->
+        <div id="lkpdGradeSummaryCard" class="hidden bg-white rounded-3xl border-2 border-emerald-500 p-6 shadow-md space-y-5">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div>
+              <span class="text-xs font-extrabold uppercase tracking-wider text-muh-sage">Hasil Koreksi Otomatis LKPD Terpadu 25 Soal • Tersimpan ke Rekap Guru</span>
+              <h3 class="font-display font-extrabold text-2xl text-slate-900 mt-0.5">
+                Total Skor LKPD: <span id="summaryLkpdTotal" class="text-muh-navy">0</span> / 100
+              </h3>
+              <p id="summaryLkpdDetail" class="text-xs sm:text-sm text-slate-600 mt-1"></p>
+            </div>
+
+            <button
+              type="button"
+              data-action="go-stage"
+              data-stage="4"
+              class="px-6 py-3.5 rounded-2xl bg-indigo-600 hover:bg-indigo-700 text-white font-bold text-sm shadow-xs transition flex items-center gap-2 self-start md:self-center cursor-pointer"
+            >
+              <span>Lanjut ke Tahap 4: Game Edukatif →</span>
+            </button>
+          </div>
+
+          <!-- Kartu Kirim Hasil Belajar ke Rekap Nilai Guru -->
+          <div id="stage3SendTeacherBox"></div>
+        </div>
+
+        <!-- Tombol Aksi Bawah Tahap 3 -->
+        <div class="flex flex-wrap items-center justify-between gap-4 pt-2">
+          <button
+            type="button"
+            data-action="go-stage"
+            data-stage="2"
+            class="px-5 py-3 rounded-2xl border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 font-bold text-sm transition cursor-pointer"
+          >
+            ← Tahap 2
+          </button>
+
+          <div class="flex flex-wrap items-center gap-3">
+            <button
+              type="button"
+              data-action="reset-lkpd"
+              onclick="window.resetLkpd()"
+              class="px-5 py-3 rounded-2xl border border-amber-300 bg-amber-50 hover:bg-amber-100 text-amber-900 font-bold text-sm transition cursor-pointer"
+            >
+              ↻ Ulangi / Reset LKPD
+            </button>
+
+            <button
+              type="button"
+              data-action="grade-lkpd"
+              onclick="window.gradeLkpd()"
+              class="px-7 py-3.5 rounded-2xl bg-muh-navy hover:bg-muh-blue text-white font-extrabold text-sm shadow-md transition flex items-center gap-2 cursor-pointer"
+            >
+              <span>✓ Periksa &amp; Simpan Nilai LKPD</span>
+            </button>
+
+            <button
+              type="button"
+              data-action="go-stage"
+              data-stage="4"
+              class="px-5 py-3 rounded-2xl bg-muh-sage hover:opacity-95 text-white font-bold text-sm transition cursor-pointer"
+            >
+              Tahap 4 →
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===================================================================== -->
+      <!-- TAHAP 4: MENGGEMBIRAKAN (ARENA GAME EDUKATIF ANAK SMP)                -->
+      <!-- ===================================================================== -->
+      <section id="stagePanel4" class="hidden stage-panel space-y-6">
+        <div class="bg-gradient-to-r from-muh-navy via-indigo-900 to-muh-sage text-white rounded-3xl p-6 sm:p-8 shadow-md">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4">
+            <div>
+              <span class="inline-block px-3 py-1 rounded-full bg-white/15 text-amber-300 text-xs font-extrabold tracking-wide mb-2">
+                TAHAP 4 • MENGGEMBIRAKAN (JOYFUL LEARNING)
+              </span>
+              <h2 class="font-display font-extrabold text-2xl sm:text-3xl">Arena Game Edukatif Pelaksanaan Norma</h2>
+              <p class="text-blue-100 text-sm mt-1">
+                Uji ketangkasan mengklasifikasikan 4 macam norma dan mengambil keputusan sebagai Duta Norma Kota Pahlawan! (Kontribusi 30% Nilai Akhir)
+              </p>
+            </div>
+
+            <div class="flex items-center gap-3 bg-white/10 backdrop-blur-xs px-4 py-3 rounded-2xl border border-white/15 self-start md:self-center">
+              <div>
+                <div class="text-[11px] uppercase tracking-wider text-blue-200">Skor Terbaik Game</div>
+                <div id="arenaBestScoreBadge" class="font-display font-extrabold text-2xl text-amber-300">0 / 100</div>
+              </div>
+              <button
+                type="button"
+                id="soundMuteBtn"
+                data-action="toggle-sound"
+                onclick="window.toggleSound()"
+                class="px-3 py-2 rounded-xl bg-white/15 hover:bg-white/25 text-white text-xs font-extrabold transition cursor-pointer"
+              >
+                🔊 Suara Aktif
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          <!-- ==================== GAME 1: ESTAFET KLASIFIKASI 4 NORMA (8 RONDE) ==================== -->
+          <div class="bg-white rounded-3xl border border-slate-200 p-6 shadow-2xs flex flex-col justify-between space-y-4">
+            <div class="flex items-start justify-between gap-2 pb-3 border-b border-slate-100">
+              <div>
+                <span class="px-2.5 py-0.5 rounded-md bg-blue-50 text-muh-navy text-[11px] font-extrabold">GAME 1 • 8 RONDE KILAT</span>
+                <h3 class="font-display font-extrabold text-lg text-slate-900 mt-1">⚡ Estafet Klasifikasi 4 Norma</h3>
+                <p class="text-xs text-slate-500">Klasifikasikan 8 peristiwa nyata di SMPM 2 Surabaya &amp; Kota Surabaya sebelum waktu habis!</p>
+              </div>
+              <span id="g1BestPill" class="px-3 py-1 rounded-xl bg-amber-50 border border-amber-200 text-amber-900 text-xs font-extrabold flex-shrink-0">Skor: 0</span>
+            </div>
+
+            <!-- Intro Game 1 -->
+            <div id="g1ScreenIntro" class="py-8 text-center space-y-4">
+              <div class="w-16 h-16 rounded-2xl bg-blue-100 text-muh-navy mx-auto flex items-center justify-center text-3xl">⚖️</div>
+              <p class="text-xs sm:text-sm text-slate-600 max-w-md mx-auto">
+                Tentukan apakah peristiwa yang muncul termasuk <strong>Norma Agama</strong>, <strong>Norma Kesusilaan</strong>, <strong>Norma Kesopanan</strong>, atau <strong>Norma Hukum</strong>. Jawab cepat untuk meraih bonus kombo!
+              </p>
+              <button
+                type="button"
+                data-action="start-game-1"
+                onclick="window.startGame1()"
+                class="arcade-btn px-6 py-3 rounded-2xl bg-muh-navy hover:bg-muh-blue text-white font-extrabold text-sm cursor-pointer"
+              >
+                ▶ Mulai Game 1
+              </button>
+            </div>
+
+            <!-- Gameplay Game 1 -->
+            <div id="g1ScreenPlay" class="hidden space-y-4">
+              <div class="flex items-center justify-between text-xs font-extrabold">
+                <span id="g1StepText" class="text-muh-navy">Ronde 1 / 8</span>
+                <span id="g1TimerText" class="text-rose-600">⏱️ 12 dtk</span>
+                <span id="g1ComboText" class="text-muh-gold">🔥 Kombo x1</span>
+                <span id="g1LivePtsText" class="text-muh-sage">Skor: 0</span>
+              </div>
+
+              <div class="w-full h-2 bg-slate-100 rounded-full overflow-hidden">
+                <div id="g1TimerBar" class="h-full bg-gradient-to-r from-muh-navy to-amber-500 transition-all duration-300" style="width: 100%"></div>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 min-h-[84px] flex items-center justify-center text-center">
+                <p id="g1EventText" class="font-bold text-slate-900 text-xs sm:text-sm leading-relaxed"></p>
+              </div>
+
+              <div id="g1NormButtons" class="grid grid-cols-2 gap-2.5">
+                <button type="button" data-action="answer-game-1" data-norm="Agama" class="arcade-btn p-3 rounded-xl border-2 border-blue-200 bg-blue-50/70 hover:bg-blue-100 text-muh-navy font-extrabold text-xs sm:text-sm cursor-pointer">🕌 Norma Agama</button>
+                <button type="button" data-action="answer-game-1" data-norm="Kesusilaan" class="arcade-btn p-3 rounded-xl border-2 border-emerald-200 bg-emerald-50/70 hover:bg-emerald-100 text-muh-sage font-extrabold text-xs sm:text-sm cursor-pointer">💚 Norma Kesusilaan</button>
+                <button type="button" data-action="answer-game-1" data-norm="Kesopanan" class="arcade-btn p-3 rounded-xl border-2 border-amber-200 bg-amber-50/70 hover:bg-amber-100 text-amber-900 font-extrabold text-xs sm:text-sm cursor-pointer">🤝 Norma Kesopanan</button>
+                <button type="button" data-action="answer-game-1" data-norm="Hukum" class="arcade-btn p-3 rounded-xl border-2 border-indigo-200 bg-indigo-50/70 hover:bg-indigo-100 text-indigo-800 font-extrabold text-xs sm:text-sm cursor-pointer">🏛️ Norma Hukum</button>
+              </div>
+
+              <div id="g1FeedbackBox" class="hidden p-3 rounded-xl text-xs font-bold"></div>
+            </div>
+
+            <!-- Result Game 1 -->
+            <div id="g1ScreenResult" class="hidden py-6 text-center space-y-3">
+              <div class="text-4xl">🏆</div>
+              <h4 class="font-display font-extrabold text-lg text-slate-900">Estafet Klasifikasi 4 Norma Selesai!</h4>
+              <p id="g1FinalSummary" class="text-xs sm:text-sm text-slate-600"></p>
+              <button
+                type="button"
+                data-action="start-game-1"
+                onclick="window.startGame1()"
+                class="arcade-btn px-5 py-2.5 rounded-xl bg-muh-navy text-white font-bold text-xs cursor-pointer"
+              >
+                ↻ Main Lagi Game 1
+              </button>
+            </div>
+          </div>
+
+          <!-- ==================== GAME 2: PETUALANGAN DUTA NORMA KOTA PAHLAWAN ==================== -->
+          <div class="bg-white rounded-3xl border border-slate-200 p-6 shadow-2xs flex flex-col justify-between space-y-4">
+            <div class="flex items-start justify-between gap-2 pb-3 border-b border-slate-100">
+              <div>
+                <span class="px-2.5 py-0.5 rounded-md bg-emerald-50 text-muh-sage text-[11px] font-extrabold">GAME 2 • 6 MISI SIMULASI</span>
+                <h3 class="font-display font-extrabold text-lg text-slate-900 mt-1">🦸 Petualangan Duta Norma Kota Pahlawan</h3>
+                <p class="text-xs text-slate-500">Ambil keputusan bijak di SMP Muhammadiyah 2 Surabaya &amp; ruang publik Kota Surabaya!</p>
+              </div>
+              <span id="g2BestPill" class="px-3 py-1 rounded-xl bg-emerald-50 border border-emerald-200 text-muh-sage text-xs font-extrabold flex-shrink-0">Skor: 0</span>
+            </div>
+
+            <!-- Intro Game 2 -->
+            <div id="g2ScreenIntro" class="py-8 text-center space-y-4">
+              <div class="w-16 h-16 rounded-2xl bg-emerald-100 text-muh-sage mx-auto flex items-center justify-center text-3xl">🏙️</div>
+              <p class="text-xs sm:text-sm text-slate-600 max-w-md mx-auto">
+                Kamu terpilih menjadi <strong>Duta Norma Pelajar Muhammadiyah</strong>. Hadapi 6 situasi nyata di sekolah, Suroboyo Bus, kantin kejujuran, dan ruang digital untuk menaikkan <strong>Meteran Integritas Norma</strong>!
+              </p>
+              <button
+                type="button"
+                data-action="start-game-2"
+                onclick="window.startGame2()"
+                class="arcade-btn px-6 py-3 rounded-2xl bg-muh-sage hover:opacity-95 text-white font-extrabold text-sm cursor-pointer"
+              >
+                ▶ Mulai Game 2
+              </button>
+            </div>
+
+            <!-- Gameplay Game 2 -->
+            <div id="g2ScreenPlay" class="hidden space-y-4">
+              <div class="flex items-center justify-between text-xs font-extrabold">
+                <span id="g2MisiProgress" class="text-muh-sage">Misi 1 / 6</span>
+                <span id="g2IntegrityLabel" class="text-muh-navy">Meteran Integritas Norma: 50%</span>
+                <span id="g2LiveScore" class="text-muh-gold">Skor: 0</span>
+              </div>
+
+              <div class="w-full h-2.5 bg-slate-100 rounded-full overflow-hidden">
+                <div id="g2IntegrityBar" class="h-full bg-gradient-to-r from-amber-500 via-muh-sage to-muh-navy transition-all duration-300" style="width: 50%"></div>
+              </div>
+
+              <div class="p-4 rounded-2xl bg-emerald-50/70 border border-emerald-200 space-y-1.5">
+                <div id="g2SceneTag" class="text-[11px] font-extrabold uppercase text-muh-sage"></div>
+                <p id="g2SceneText" class="text-xs sm:text-sm font-semibold text-slate-900 leading-relaxed"></p>
+              </div>
+
+              <div id="g2ChoicesBox" class="space-y-2"></div>
+
+              <div id="g2MoralFeedback" class="hidden p-3 rounded-xl text-xs font-bold"></div>
+            </div>
+
+            <!-- Result Game 2 -->
+            <div id="g2ScreenResult" class="hidden py-6 text-center space-y-3">
+              <div class="text-4xl">🎖️</div>
+              <h4 class="font-display font-extrabold text-lg text-slate-900">Misi Duta Norma Kota Pahlawan Tuntas!</h4>
+              <p id="g2FinalSummary" class="text-xs sm:text-sm text-slate-600"></p>
+              <button
+                type="button"
+                data-action="start-game-2"
+                onclick="window.startGame2()"
+                class="arcade-btn px-5 py-2.5 rounded-xl bg-muh-sage text-white font-bold text-xs cursor-pointer"
+              >
+                ↻ Main Lagi Game 2
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kartu Kirim Skor Game & Nilai Terpadu ke Rekap Guru -->
+        <div id="stage4SendTeacherBox" class="hidden"></div>
+
+        <div class="flex flex-wrap items-center justify-between gap-4 pt-2">
+          <button type="button" data-action="go-stage" data-stage="3" class="px-5 py-3 rounded-2xl border border-slate-300 bg-white hover:bg-slate-50 text-slate-700 font-bold text-sm transition cursor-pointer">
+            ← Tahap 3
+          </button>
+          <button type="button" data-action="go-stage" data-stage="5" class="px-6 py-3.5 rounded-2xl bg-muh-sage hover:opacity-95 text-white font-extrabold text-sm shadow-md transition flex items-center gap-2 cursor-pointer">
+            <span>Lanjut ke Tahap 5: Refleksi &amp; Output →</span>
+          </button>
+        </div>
+      </section>
+
+      <!-- ===================================================================== -->
+      <!-- TAHAP 5: MEREFLEKSI & OUTPUT PEMBELAJARAN MENDALAM                    -->
+      <!-- ===================================================================== -->
+      <section id="stagePanel5" class="hidden stage-panel space-y-6">
+        <!-- 4 Kartu KPI Capaian Murid -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 no-print">
+          <div class="bg-white rounded-2xl border border-slate-200 p-4 shadow-2xs">
+            <div class="text-[11px] font-extrabold uppercase text-slate-500">Skor LKPD (Bobot 70%)</div>
+            <div id="kpiStudentLkpd" class="font-display font-extrabold text-2xl sm:text-3xl text-muh-navy mt-1">0 / 100</div>
+            <div class="text-xs text-slate-400 mt-0.5">PG + Benar/Salah + Isian</div>
+          </div>
+
+          <div class="bg-white rounded-2xl border border-slate-200 p-4 shadow-2xs">
+            <div class="text-[11px] font-extrabold uppercase text-slate-500">Skor Game Tertinggi (30%)</div>
+            <div id="kpiStudentGame" class="font-display font-extrabold text-2xl sm:text-3xl text-indigo-700 mt-1">0 / 100</div>
+            <div class="text-xs text-slate-400 mt-0.5">Skor Terbaik Game 1 &amp; 2</div>
+          </div>
+
+          <div class="bg-white rounded-2xl border border-slate-200 p-4 shadow-2xs">
+            <div class="text-[11px] font-extrabold uppercase text-slate-500">Nilai Akhir Terpadu</div>
+            <div id="kpiStudentFinal" class="font-display font-extrabold text-2xl sm:text-3xl text-muh-sage mt-1">0</div>
+            <div class="text-xs text-slate-400 mt-0.5">70% LKPD + 30% Game</div>
+          </div>
+
+          <div class="bg-white rounded-2xl border border-slate-200 p-4 shadow-2xs">
+            <div class="text-[11px] font-extrabold uppercase text-slate-500">Status Ketuntasan (KKTP ≥ 75)</div>
+            <div id="kpiStudentPredicate" class="font-display font-extrabold text-sm sm:text-base text-muh-gold mt-2">Perlu Pembinaan (&lt; 75)</div>
+            <div class="text-xs text-slate-400 mt-0.5">Capaian Belajar Fase D</div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+
+          <!-- Kiri: Grafik Batang SVG Diagnostik & Form Refleksi -->
+          <div class="lg:col-span-5 space-y-6 no-print">
+            <div class="bg-white rounded-3xl border border-slate-200 p-6 shadow-2xs space-y-4">
+              <div>
+                <span class="text-xs font-extrabold uppercase tracking-wider text-muh-navy">Diagnostik Capaian Pembelajaran</span>
+                <h3 class="font-display font-extrabold text-lg text-slate-900">Komponen Nilai &amp; Penguasaan C1–C6</h3>
+              </div>
+
+              <div id="diagnosticSvgContainer"></div>
+
+              <div class="pt-3 border-t border-slate-100 space-y-2">
+                <div class="text-xs font-extrabold text-slate-700">Penguasaan Level Kognitif Studi Kasus (C1–C6):</div>
+                <div id="bloomSvgContainer"></div>
+              </div>
+            </div>
+
+            <!-- Formulir Refleksi Mendalam & Rencana Aksi Nyata -->
+            <div class="bg-white rounded-3xl border border-slate-200 p-6 shadow-2xs space-y-4">
+              <div>
+                <span class="text-xs font-extrabold uppercase tracking-wider text-muh-sage">Refleksi Mendalam &amp; Komitmen Aksi Nyata</span>
+                <h3 class="font-display font-extrabold text-lg text-slate-900">Komitmen Pelaksanaan Norma di Rumah, Sekolah &amp; Masyarakat</h3>
+              </div>
+
+              <div>
+                <label for="refleksiBermakna" class="block text-xs font-bold text-slate-700 mb-1">
+                  1. Refleksi Mendalam: Makna terpenting yang saya pahami tentang pelaksanaan 4 macam norma...
+                </label>
+                <textarea
+                  id="refleksiBermakna"
+                  rows="2"
+                  placeholder="Tuliskan refleksi mendalammu setelah belajar hari ini..."
+                  class="w-full px-3.5 py-2.5 rounded-2xl border border-slate-300 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-muh-navy"
+                ></textarea>
+              </div>
+
+              <div>
+                <label for="aksiNyataMingguIni" class="block text-xs font-bold text-slate-700 mb-1">
+                  2. Komitmen Pelaksanaan Norma di Rumah, Sekolah (SMPM 2 Surabaya) &amp; Masyarakat...
+                </label>
+                <textarea
+                  id="aksiNyataMingguIni"
+                  rows="2"
+                  placeholder="Contoh: Disiplin ibadah tepat waktu, bertutur kata santun, dan mematuhi tata tertib sekolah serta lalu lintas..."
+                  class="w-full px-3.5 py-2.5 rounded-2xl border border-slate-300 text-xs sm:text-sm focus:outline-none focus:ring-2 focus:ring-muh-navy"
+                ></textarea>
+              </div>
+
+              <div class="space-y-2.5 pt-1">
+                <button
+                  type="button"
+                  data-action="save-reflection"
+                  onclick="window.saveReflection()"
+                  class="w-full py-3 px-4 rounded-2xl bg-muh-navy hover:bg-muh-blue text-white font-extrabold text-xs sm:text-sm shadow-xs transition flex items-center justify-center gap-2 cursor-pointer"
+                >
+                  <span>💾 Simpan &amp; Kirim ke Rekap Nilai Guru</span>
+                </button>
+
+                <!-- Kartu Pengiriman Lintas Perangkat ke Drs. Bunyani -->
+                <div id="stage5SendTeacherBox"></div>
+
+                <button
+                  type="button"
+                  data-action="print-cert"
+                  onclick="window.print()"
+                  class="w-full py-2.5 px-4 rounded-xl border-2 border-muh-navy text-muh-navy hover:bg-blue-50 font-extrabold text-xs sm:text-sm transition flex items-center justify-center gap-2 cursor-pointer"
+                >
+                  <span>🖨️ Cetak / Simpan PDF Sertifikat</span>
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kanan: Sertifikat Capaian Belajar Digital Resmi SMP Muhammadiyah 2 Surabaya -->
+          <div class="lg:col-span-7">
+            <div class="print-sheet bg-white rounded-3xl border-4 border-double border-muh-navy p-6 sm:p-8 shadow-md relative overflow-hidden">
+              <div class="flex flex-col sm:flex-row items-center justify-between gap-4 pb-5 border-b-2 border-slate-200">
+                <div class="flex items-center gap-3">
+                  <svg width="72" height="56" viewBox="0 0 240 185" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <g transform="translate(66, 56)">
+                      <g stroke="#1e3a8a" stroke-width="2.8" stroke-linecap="round">
+                        <line x1="0" y1="-48" x2="0" y2="-23" />
+                        <line x1="24" y1="-41.5" x2="11.5" y2="-19.9" />
+                        <line x1="41.5" y1="-24" x2="19.9" y2="-11.5" />
+                        <line x1="48" y1="0" x2="23" y2="0" />
+                        <line x1="41.5" y1="24" x2="19.9" y2="11.5" />
+                        <line x1="24" y1="41.5" x2="11.5" y2="19.9" />
+                        <line x1="0" y1="48" x2="0" y2="23" />
+                        <line x1="-24" y1="41.5" x2="-11.5" y2="19.9" />
+                        <line x1="-41.5" y1="24" x2="-19.9" y2="11.5" />
+                        <line x1="-48" y1="0" x2="-23" y2="0" />
+                        <line x1="-41.5" y1="-24" x2="-19.9" y2="-11.5" />
+                        <line x1="-24" y1="-41.5" x2="-11.5" y2="-19.9" />
+                      </g>
+                      <circle cx="0" cy="0" r="21" fill="#ffffff" stroke="#1e3a8a" stroke-width="2.5" />
+                      <path d="M-12 3 C-9 -6, -3 -7, 0 -1 C3 -8, 9 -6, 12 2 M-9 8 L9 8 M-5 -9 L5 -9" stroke="#1e3a8a" stroke-width="2" stroke-linecap="round" />
+                    </g>
+                    <path d="M29 74 L40 100 L58 100 L58 84 C58 79, 74 79, 74 84 L74 100 L92 100 L103 74 L96 74 L89 90 L79 90 L79 77 C79 71, 53 71, 53 77 L53 90 L43 90 L36 74 Z" fill="#d97706" />
+                    <text x="122" y="60" fill="#1e3a8a" font-family="Plus Jakarta Sans, Arial, sans-serif" font-weight="800" font-size="47">SMP</text>
+                    <path d="M10 68 C26 105, 62 112, 98 131 C76 108, 41 99, 10 68 Z" fill="#4d7c63" />
+                    <path d="M230 65 C200 98, 142 85, 98 118 C144 97, 198 110, 230 65 Z" fill="#4d7c63" />
+                    <text x="120" y="161" text-anchor="middle" fill="#1e3a8a" font-family="Plus Jakarta Sans, Arial, sans-serif" font-weight="800" font-size="22.5">MUHAMMADIYAH 2</text>
+                    <text x="120" y="179" text-anchor="middle" fill="#1e3a8a" font-family="Plus Jakarta Sans, Arial, sans-serif" font-weight="800" font-size="14" letter-spacing="8">SURABAYA</text>
+                  </svg>
+                  <div>
+                    <div class="font-display font-extrabold text-sm sm:text-base text-muh-navy">SMP MUHAMMADIYAH 2 SURABAYA</div>
+                    <div class="text-xs text-slate-500">Pendidikan Pancasila Kelas VII • Pelaksanaan Norma dalam Kehidupan Masyarakat</div>
+                  </div>
+                </div>
+                <span id="certPredicatePill" class="px-3 py-1 rounded-full bg-amber-100 text-amber-900 border border-amber-300 text-xs font-extrabold">
+                  Status: Perlu Pembinaan (&lt; 75)
+                </span>
+              </div>
+
+              <div class="text-center my-6 space-y-1">
+                <p class="text-xs font-extrabold uppercase tracking-[0.22em] text-muh-gold">Sertifikat Capaian Belajar</p>
+                <p class="text-xs text-slate-500">Diberikan kepada peserta didik:</p>
+                <h2 id="certOutName" class="font-display font-extrabold text-2xl sm:text-3xl text-slate-900 pt-1">
+                  Peserta Didik Kelas VII
+                </h2>
+                <p id="certOutClassAbsen" class="text-sm font-bold text-muh-sage">
+                  Kelas 7A • Nomor Presensi -
+                </p>
+              </div>
+
+              <div class="grid grid-cols-2 sm:grid-cols-5 gap-2.5 my-5">
+                <div class="p-3 rounded-2xl bg-slate-50 border border-slate-200 text-center">
+                  <div class="text-[10px] font-bold uppercase text-slate-500">PG C1–C6</div>
+                  <div id="certOutPg" class="font-display font-extrabold text-base text-muh-navy mt-0.5">0 / 40</div>
+                </div>
+                <div class="p-3 rounded-2xl bg-slate-50 border border-slate-200 text-center">
+                  <div class="text-[10px] font-bold uppercase text-slate-500">B/S Lit-Num</div>
+                  <div id="certOutBs" class="font-display font-extrabold text-base text-muh-sage mt-0.5">0 / 30</div>
+                </div>
+                <div class="p-3 rounded-2xl bg-slate-50 border border-slate-200 text-center">
+                  <div class="text-[10px] font-bold uppercase text-slate-500">Isian Singkat</div>
+                  <div id="certOutIsian" class="font-display font-extrabold text-base text-muh-gold mt-0.5">0 / 30</div>
+                </div>
+                <div class="p-3 rounded-2xl bg-slate-50 border border-slate-200 text-center">
+                  <div class="text-[10px] font-bold uppercase text-slate-500">Skor Game</div>
+                  <div id="certOutGame" class="font-display font-extrabold text-base text-indigo-700 mt-0.5">0</div>
+                </div>
+                <div class="col-span-2 sm:col-span-1 p-3 rounded-2xl bg-blue-50 border border-blue-200 text-center">
+                  <div class="text-[10px] font-extrabold uppercase text-muh-navy">Nilai Akhir</div>
+                  <div id="certOutFinal" class="font-display font-extrabold text-lg text-muh-navy mt-0.5">0</div>
+                </div>
+              </div>
+
+              <div class="space-y-2.5 my-5">
+                <div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200 text-xs">
+                  <span class="font-extrabold text-slate-700 uppercase">Refleksi Mendalam:</span>
+                  <p id="certOutRefleksi" class="text-slate-600 italic mt-0.5 font-serif-editorial">
+                    "Memahami pelaksanaan Norma Agama, Kesusilaan, Kesopanan, dan Hukum dalam menjaga keteraturan dan keadilan masyarakat."
+                  </p>
+                </div>
+                <div class="p-3.5 rounded-2xl bg-emerald-50/70 border border-emerald-200 text-xs">
+                  <span class="font-extrabold text-muh-sage uppercase">Komitmen Aksi Nyata Pelajar:</span>
+                  <p id="certOutAksi" class="text-slate-700 font-medium mt-0.5">
+                    "Membiasakan perilaku tertib norma di rumah, SMP Muhammadiyah 2 Surabaya, dan masyarakat."
+                  </p>
+                </div>
+              </div>
+
+              <div class="pt-5 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs">
+                <div class="text-slate-500">
+                  <div>Surabaya, <span id="certTodayDate"></span></div>
+                  <div class="text-[11px] text-slate-400">Terverifikasi Digital • Kurikulum Merdeka Fase D</div>
+                </div>
+                <div class="text-center sm:text-right">
+                  <div class="text-slate-500">Guru Pendidikan Pancasila,</div>
+                  <div class="font-serif-editorial italic text-base text-muh-navy font-bold my-1">Drs. Bunyani</div>
+                  <div class="font-display font-extrabold text-slate-900 border-t border-slate-300 pt-1">
+                    Drs. Bunyani (Guru Pendidikan Pancasila)
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ======================================================================= -->
+    <!-- MODE 2: DASHBOARD REKAP HASIL BELAJAR GURU (DRS. BUNYANI)               -->
+    <!-- ======================================================================= -->
+    <div id="teacherWorkspace" class="hidden stage-panel space-y-6">
+
+      <!-- Banner Header Dashboard Rekap Guru -->
+      <section class="bg-gradient-to-r from-muh-navy via-blue-900 to-muh-sage text-white rounded-3xl p-6 sm:p-8 shadow-md">
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-4">
+          <div class="space-y-1.5">
+            <span class="inline-block px-3 py-1 rounded-full bg-white/15 text-amber-300 text-xs font-extrabold uppercase tracking-wider">
+              Dashboard Rekap Guru — Drs. Bunyani • 100% Data Riil (0 Data Dummy)
+            </span>
+            <h2 class="font-display font-extrabold text-2xl sm:text-3xl">
+              Rekapitulasi Nilai Pendidikan Pancasila Kelas VII (7A–7G)
+            </h2>
+            <p class="text-blue-100 text-xs sm:text-sm">
+              SMP Muhammadiyah 2 Surabaya • Guru Pengampu: <strong>Drs. Bunyani</strong> • Materi: Pelaksanaan Norma dalam Kehidupan Masyarakat
+            </p>
+          </div>
+
+          <!-- Tombol Toolbar Pengelolaan Data Riil & Sinkronisasi GAS -->
+          <div class="flex flex-wrap items-center gap-2 no-print">
+            <button
+              type="button"
+              data-action="sync-gas-pull"
+              class="px-4 py-2.5 rounded-2xl bg-emerald-400 hover:bg-emerald-300 text-slate-950 font-extrabold text-xs sm:text-sm shadow-xs transition flex items-center gap-1.5 cursor-pointer"
+            >
+              <span>🔄 Sinkronisasi Google Sheets</span>
+            </button>
+
+            <button
+              type="button"
+              data-action="open-cloud-modal"
+              onclick="window.openCloudSyncModal()"
+              class="px-4 py-2.5 rounded-2xl bg-sky-400 hover:bg-sky-300 text-slate-950 font-extrabold text-xs sm:text-sm shadow-xs transition flex items-center gap-1.5 cursor-pointer"
+            >
+              <span>☁️ Integrasi Google Apps Script</span>
+            </button>
+
+            <button
+              type="button"
+              data-action="open-add-modal"
+              onclick="window.openAddModal()"
+              class="px-4 py-2.5 rounded-2xl bg-white hover:bg-blue-50 text-muh-navy font-extrabold text-xs sm:text-sm shadow-xs transition flex items-center gap-1.5 cursor-pointer"
+            >
+              <span>➕ Tambah Data Riil Murid</span>
+            </button>
+
+            <button
+              type="button"
+              data-action="open-import-code"
+              onclick="window.openImportCodeModal()"
+              class="px-4 py-2.5 rounded-2xl bg-amber-500 hover:bg-muh-gold text-white font-extrabold text-xs sm:text-sm shadow-xs transition flex items-center gap-1.5 cursor-pointer"
+            >
+              <span>📥 Impor Kode Murid</span>
+            </button>
+
+            <button
+              type="button"
+              data-action="open-csv-modal"
+              onclick="window.openCsvModal()"
+              class="px-4 py-2.5 rounded-2xl bg-indigo-500 hover:bg-indigo-400 text-white font-extrabold text-xs sm:text-sm shadow-xs transition flex items-center gap-1.5 cursor-pointer"
+            >
+              <span>📂 Impor / Ekspor CSV</span>
+            </button>
+
+            <button
+              type="button"
+              data-action="download-html"
+              onclick="window.downloadSelfHtml()"
+              class="px-4 py-2.5 rounded-2xl bg-blue-600 hover:bg-blue-500 text-white font-bold text-xs sm:text-sm shadow-xs transition flex items-center gap-1.5 cursor-pointer"
+            >
+              <span>⬇️ Unduh HTML Siap Netlify</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Bar Status Sinkronisasi -->
+        <div class="mt-4 pt-3 border-t border-white/15 flex flex-wrap items-center justify-between gap-2 text-xs text-blue-100">
+          <span>✅ Sinkronisasi 2 arah Google Apps Script (<code>upsertStudent</code>, <code>getAll</code>, <code>bulkUpsert</code>), Tautan Ajaib (<code>#import=SMPM2K7-...</code>), dan CSV.</span>
+          <span id="cloudStatusIndicator" class="px-3 py-1 rounded-full bg-white/10 font-bold text-amber-200">☁️ Cloud GAS: Mode Lokal (Belum ditautkan)</span>
+        </div>
+      </section>
+  <!-- ==================== MODAL INTEGRASI GOOGLE APPS SCRIPT (GAS) 3 TAB ==================== -->
+  <div id="cloudSyncModal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-white rounded-3xl border border-slate-200 max-w-3xl w-full p-6 shadow-2xl space-y-4 my-auto">
+      <div class="flex items-start justify-between gap-3 pb-3 border-b border-slate-100">
+        <div>
+          <span class="text-xs font-extrabold uppercase tracking-wider text-sky-700">Sinkronisasi Dua Arah HP Murid ⇄ Google Sheets Drs. Bunyani</span>
+          <h3 class="font-display font-extrabold text-lg sm:text-xl text-slate-900">☁️ Integrasi Google Apps Script (GAS)</h3>
+        </div>
+        <button type="button" data-action="close-cloud-modal" class="p-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-600 font-bold text-xs cursor-pointer">✕</button>
+      </div>
+
+      <!-- Navigasi 3 Tab GAS -->
+      <div class="flex flex-wrap gap-2 bg-slate-100 p-1.5 rounded-2xl border border-slate-200">
+        <button
+          type="button"
+          id="gasTabBtn_config"
+          data-action="switch-gas-tab"
+          data-tab="config"
+          class="flex-1 min-w-[160px] py-2 px-3 rounded-xl bg-muh-navy text-white font-extrabold text-xs transition cursor-pointer"
+        >
+          1. Konfigurasi &amp; Uji Koneksi
+        </button>
+        <button
+          type="button"
+          id="gasTabBtn_code"
+          data-action="switch-gas-tab"
+          data-tab="code"
+          class="flex-1 min-w-[160px] py-2 px-3 rounded-xl text-slate-700 hover:bg-white font-extrabold text-xs transition cursor-pointer"
+        >
+          2. Kode Code.gs Lengkap
+        </button>
+        <button
+          type="button"
+          id="gasTabBtn_guide"
+          data-action="switch-gas-tab"
+          data-tab="guide"
+          class="flex-1 min-w-[160px] py-2 px-3 rounded-xl text-slate-700 hover:bg-white font-extrabold text-xs transition cursor-pointer"
+        >
+          3. Panduan Pemasangan 4 Langkah
+        </button>
+      </div>
+
+      <!-- TAB 1: KONFIGURASI & UJI KONEKSI -->
+      <div id="gasTabPanel_config" class="space-y-4">
+        <div class="p-4 rounded-2xl bg-blue-50/80 border border-blue-200 space-y-3">
+          <div class="flex flex-wrap items-center justify-between gap-2">
+            <label for="cloudSyncUrlInput" class="text-xs font-extrabold text-muh-navy">
+              URL Web App Google Apps Script (<code>https://script.google.com/macros/s/.../exec</code>):
+            </label>
+            <span id="gasModalStatusPill" class="px-2.5 py-0.5 rounded-full bg-slate-200 text-slate-700 text-[11px] font-extrabold">
+              Status: Belum Dikonfigurasi
+            </span>
+          </div>
+
+          <div class="flex flex-col sm:flex-row gap-2">
+            <input
+              type="url"
+              id="cloudSyncUrlInput"
+              placeholder="Tempel URL Web App Google Apps Script di sini..."
+              class="flex-1 px-3.5 py-2.5 rounded-xl border border-slate-300 bg-white text-xs font-mono focus:outline-none focus:ring-2 focus:ring-muh-navy"
+            />
+            <button
+              type="button"
+              data-action="test-cloud-conn"
+              class="px-4 py-2.5 rounded-xl bg-muh-navy hover:bg-muh-blue text-white font-extrabold text-xs transition cursor-pointer"
+            >
+              💾 Simpan &amp; 🔌 Uji Koneksi (?action=ping)
+            </button>
+          </div>
+
+          <div id="gasTestResultBox" class="hidden p-3 rounded-xl text-xs font-bold"></div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <button
+            type="button"
+            data-action="pull-cloud-data"
+            class="p-3.5 rounded-2xl bg-emerald-600 hover:bg-emerald-700 text-white text-left transition shadow-2xs cursor-pointer"
+          >
+            <div class="font-display font-extrabold text-xs sm:text-sm">🔄 Tarik Semua Data Siswa dari Google Sheets</div>
+            <div class="text-[11px] text-emerald-100 mt-0.5">Memanggil <code>?action=getAll</code> dan memperbarui tabel rekap 7A–7G</div>
+          </button>
+
+          <button
+            type="button"
+            data-action="bulk-upsert-gas"
+            class="p-3.5 rounded-2xl bg-indigo-600 hover:bg-indigo-700 text-white text-left transition shadow-2xs cursor-pointer"
+          >
+            <div class="font-display font-extrabold text-xs sm:text-sm">⬆️ Unggah Data Lokal ke Google Sheets</div>
+            <div class="text-[11px] text-indigo-100 mt-0.5">Mengirim seluruh data rekap lokal via <code>action=bulkUpsert</code></div>
+          </button>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-amber-50/90 border border-amber-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <div class="text-xs text-amber-950 space-y-0.5">
+            <div class="font-extrabold">Bagikan ke Seluruh Murid Kelas 7A–7G (Netlify / Grup WA):</div>
+            <p class="text-amber-900">
+              Tombol di samping akan mengunduh <code>index.html</code> dengan URL GAS tertanam otomatis di dalam kode sehingga seluruh kiriman nilai murid langsung masuk ke Google Sheets Anda.
+            </p>
+          </div>
+          <button
+            type="button"
+            data-action="download-html"
+            class="px-4 py-3 rounded-xl bg-muh-gold hover:opacity-95 text-white font-extrabold text-xs shadow-xs flex-shrink-0 cursor-pointer"
+          >
+            ⬇️ Unduh HTML Siap Share Siswa (Terkoneksi GAS)
+          </button>
+        </div>
+      </div>
+
+      <!-- TAB 2: KODE CODE.GS LENGKAP -->
+      <div id="gasTabPanel_code" class="hidden space-y-3">
+        <div class="flex flex-wrap items-center justify-between gap-2">
+          <p class="text-xs text-slate-600">
+            Salin kode <strong><code>Code.gs</code></strong> berikut ke editor Google Apps Script. Skrip otomatis membuat sheet <code>Rekap_Nilai_7A_7G</code> dan <code>Ringkasan_Per_Kelas</code>.
+          </p>
+          <div class="flex items-center gap-2">
+            <button
+              type="button"
+              data-action="copy-apps-script"
+              class="px-3.5 py-2 rounded-xl bg-muh-navy hover:bg-muh-blue text-white font-extrabold text-xs cursor-pointer"
+            >
+              📋 Salin Kode Code.gs
+            </button>
+            <button
+              type="button"
+              data-action="download-code-gs"
+              class="px-3.5 py-2 rounded-xl bg-muh-sage hover:opacity-95 text-white font-extrabold text-xs cursor-pointer"
+            >
+              ⬇️ Unduh Code.gs
+            </button>
+          </div>
+        </div>
+
+        <textarea
+          id="appsScriptSourceBox"
+          readonly
+          rows="13"
+          class="w-full px-3.5 py-3 rounded-2xl border border-slate-300 bg-slate-900 text-emerald-300 text-[11px] font-mono leading-relaxed focus:outline-none"
+        >/**
+ * ============================================================================
+ * GOOGLE APPS SCRIPT (Code.gs) - INTEGRASI DUA ARAH
+ * Aplikasi Pembelajaran Pendidikan Pancasila Kelas VII (7A-7G)
+ * SMP Muhammadiyah 2 Surabaya | Guru Pengampu: Drs. Bunyani
+ * Materi: Pelaksanaan Norma dalam Kehidupan Masyarakat
+ * ============================================================================
+ */
+
+var SHEET_REKAP = 'Rekap_Nilai_7A_7G';
+var SHEET_RINGKASAN = 'Ringkasan_Per_Kelas';
+var PARALLEL_CLASSES = ['7A', '7B', '7C', '7D', '7E', '7F', '7G'];
+
+function getOrCreateSheets_() {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var rekap = ss.getSheetByName(SHEET_REKAP);
+  if (!rekap) {
+    rekap = ss.insertSheet(SHEET_REKAP);
+  }
+  if (rekap.getLastRow() === 0) {
+    var headers = [
+      'ID Record', 'Waktu Update', 'Nama Lengkap', 'Kelas', 'No Presensi',
+      'PG C1-C6 (40)', 'B/S Lit-Num (30)', 'Isian Singkat (30)',
+      'Total LKPD (100)', 'Skor Game (100)', 'Nilai Akhir',
+      'Status KKTP (75)', 'Refleksi Mendalam', 'Aksi Nyata / Catatan', 'Detail JSON'
+    ];
+    rekap.appendRow(headers);
+    var headerRange = rekap.getRange(1, 1, 1, headers.length);
+    headerRange.setBackground('#1e3a8a').setFontColor('#ffffff').setFontWeight('bold');
+    rekap.setFrozenRows(1);
+  }
+
+  var ringkasan = ss.getSheetByName(SHEET_RINGKASAN);
+  if (!ringkasan) {
+    ringkasan = ss.insertSheet(SHEET_RINGKASAN);
+  }
+  return { rekap: rekap, ringkasan: ringkasan };
+}
+
+function refreshClassSummary_(rekapSheet, summarySheet) {
+  var lastRow = rekapSheet.getLastRow();
+  var rows = lastRow > 1 ? rekapSheet.getRange(2, 1, lastRow - 1, 12).getValues() : [];
+
+  summarySheet.clear();
+  var sHeaders = ['Kelas Paralel', 'Jumlah Murid', 'Rata-Rata Nilai Akhir', 'Jumlah Tuntas (>= 75)', 'Persentase Ketuntasan'];
+  summarySheet.appendRow(sHeaders);
+  summarySheet.getRange(1, 1, 1, sHeaders.length).setBackground('#4d7c63').setFontColor('#ffffff').setFontWeight('bold');
+
+  for (var c = 0; c < PARALLEL_CLASSES.length; c++) {
+    var cls = PARALLEL_CLASSES[c];
+    var count = 0;
+    var sumScore = 0;
+    var pass = 0;
+    for (var i = 0; i < rows.length; i++) {
+      if (String(rows[i][3]).trim().toUpperCase() === cls) {
+        count++;
+        var val = Number(rows[i][10] || 0);
+        sumScore += val;
+        if (val >= 75) pass++;
+      }
+    }
+    var avg = count > 0 ? Math.round((sumScore / count) * 10) / 10 : 0;
+    var pct = count > 0 ? Math.round((pass / count) * 100) + '%' : '0%';
+    summarySheet.appendRow([cls, count, avg, pass, pct]);
+  }
+}
+
+function upsertSingleRecord_(sheet, rec) {
+  var pg = Number(rec.pg || 0);
+  var bs = Number(rec.bs || 0);
+  var isian = Number(rec.isian || 0);
+  var totalLkpd = pg + bs + isian;
+  var game = Number(rec.game || 0);
+  var finalScore = Number(rec.final || Math.round(totalLkpd * 0.7 + game * 0.3));
+  var statusKktp = finalScore >= 75 ? 'Tuntas (>= 75)' : 'Perlu Pembinaan (< 75)';
+  var nowStr = Utilities.formatDate(new Date(), 'Asia/Jakarta', 'yyyy-MM-dd HH:mm:ss');
+
+  var rowValues = [
+    String(rec.id || 'GAS-' + Date.now()),
+    nowStr,
+    String(rec.nama || '').trim(),
+    String(rec.kelas || '7A').trim().toUpperCase(),
+    Number(rec.absen || 1),
+    pg,
+    bs,
+    isian,
+    totalLkpd,
+    game,
+    finalScore,
+    statusKktp,
+    String(rec.refleksi || ''),
+    String(rec.catatan || ''),
+    JSON.stringify(rec.c16 || {})
+  ];
+
+  var lastRow = sheet.getLastRow();
+  var targetRow = -1;
+  if (lastRow > 1) {
+    var existing = sheet.getRange(2, 1, lastRow - 1, 4).getValues();
+    for (var i = 0; i < existing.length; i++) {
+      var sameId = String(existing[i][0]) === rowValues[0];
+      var sameStudent =
+        String(existing[i][2]).toLowerCase() === rowValues[2].toLowerCase() &&
+        String(existing[i][3]).toUpperCase() === rowValues[3];
+      if (sameId || sameStudent) {
+        targetRow = i + 2;
+        break;
+      }
+    }
+  }
+
+  if (targetRow > 0) {
+    sheet.getRange(targetRow, 1, 1, rowValues.length).setValues([rowValues]);
+  } else {
+    sheet.appendRow(rowValues);
+  }
+}
+
+function jsonResponse_(obj) {
+  return ContentService
+    .createTextOutput(JSON.stringify(obj))
+    .setMimeType(ContentService.MimeType.JSON);
+}
+
+function doGet(e) {
+  var action = (e && e.parameter && e.parameter.action) ? String(e.parameter.action) : 'getAll';
+  var sheets = getOrCreateSheets_();
+
+  if (action === 'ping') {
+    return jsonResponse_({
+      status: 'ok',
+      message: 'Koneksi GAS SMP Muhammadiyah 2 Surabaya (Drs. Bunyani) Berhasil!',
+      totalRows: Math.max(0, sheets.rekap.getLastRow() - 1)
+    });
+  }
+
+  var lastRow = sheets.rekap.getLastRow();
+  var records = [];
+  if (lastRow > 1) {
+    var values = sheets.rekap.getRange(2, 1, lastRow - 1, 15).getValues();
+    for (var i = 0; i < values.length; i++) {
+      var r = values[i];
+      if (!r[2]) continue;
+      var c16Obj = {};
+      try { c16Obj = JSON.parse(String(r[14] || '{}')); } catch (err) { c16Obj = {}; }
+      records.push({
+        id: String(r[0] || 'GAS-' + i),
+        updatedAt: String(r[1] || ''),
+        nama: String(r[2] || ''),
+        kelas: String(r[3] || '7A'),
+        absen: Number(r[4] || 1),
+        pg: Number(r[5] || 0),
+        bs: Number(r[6] || 0),
+        isian: Number(r[7] || 0),
+        game: Number(r[9] || 0),
+        final: Number(r[10] || 0),
+        refleksi: String(r[12] || ''),
+        catatan: String(r[13] || ''),
+        c16: c16Obj
+      });
+    }
+  }
+
+  return jsonResponse_({
+    status: 'ok',
+    school: 'SMP Muhammadiyah 2 Surabaya',
+    teacher: 'Drs. Bunyani',
+    records: records
+  });
+}
+
+function doPost(e) {
+  try {
+    var sheets = getOrCreateSheets_();
+    var body = JSON.parse(e.postData.contents);
+    var action = body.action || 'upsertStudent';
+
+    if (action === 'bulkUpsert' && Array.isArray(body.records)) {
+      for (var i = 0; i < body.records.length; i++) {
+        if (body.records[i] && body.records[i].nama) {
+          upsertSingleRecord_(sheets.rekap, body.records[i]);
+        }
+      }
+      refreshClassSummary_(sheets.rekap, sheets.ringkasan);
+      return jsonResponse_({ status: 'ok', count: body.records.length });
+    }
+
+    var record = body.record || body;
+    if (!record || !record.nama) {
+      return jsonResponse_({ status: 'error', message: 'Nama murid kosong' });
+    }
+
+    upsertSingleRecord_(sheets.rekap, record);
+    refreshClassSummary_(sheets.rekap, sheets.ringkasan);
+    return jsonResponse_({ status: 'ok', message: 'Nilai ' + record.nama + ' tersimpan di Google Sheets' });
+  } catch (err) {
+    return jsonResponse_({ status: 'error', message: String(err) });
+  }
+}</textarea>
+      </div>
+
+      <!-- TAB 3: PANDUAN PEMASANGAN 4 LANGKAH -->
+      <div id="gasTabPanel_guide" class="hidden space-y-3 text-xs sm:text-sm text-slate-700">
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-1">
+            <span class="px-2.5 py-0.5 rounded-full bg-muh-navy text-white text-[11px] font-extrabold">LANGKAH 1</span>
+            <h4 class="font-display font-extrabold text-slate-900 pt-1">Buat Google Sheets &amp; Buka Apps Script</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Buka <strong>sheets.google.com</strong> → buat spreadsheet baru (misal: <em>Rekap Pendidikan Pancasila Kelas 7</em>) → klik menu <strong>Ekstensi (Extensions) → Apps Script</strong>.
+            </p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-1">
+            <span class="px-2.5 py-0.5 rounded-full bg-muh-sage text-white text-[11px] font-extrabold">LANGKAH 2</span>
+            <h4 class="font-display font-extrabold text-slate-900 pt-1">Tempel Kode <code>Code.gs</code> &amp; Simpan</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Hapus isi bawaan <code>myFunction()</code>, lalu tempelkan seluruh kode dari <strong>Tab 2 (Kode Code.gs Lengkap)</strong> dan tekan ikon <strong>Simpan (Ctrl+S)</strong>.
+            </p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-1">
+            <span class="px-2.5 py-0.5 rounded-full bg-muh-gold text-white text-[11px] font-extrabold">LANGKAH 3</span>
+            <h4 class="font-display font-extrabold text-slate-900 pt-1">Terapkan (Deploy) sebagai Aplikasi Web</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Klik <strong>Terapkan (Deploy) → Deployment baru → Jenis: Aplikasi Web</strong>. Atur <em>Jalankan sebagai</em>: <strong>Saya (Me)</strong> dan <em>Yang memiliki akses</em>: <strong>Siapa saja (Anyone)</strong> → klik <strong>Terapkan</strong> dan salin URL <code>.../exec</code>.
+            </p>
+          </div>
+
+          <div class="p-4 rounded-2xl bg-slate-50 border border-slate-200 space-y-1">
+            <span class="px-2.5 py-0.5 rounded-full bg-indigo-600 text-white text-[11px] font-extrabold">LANGKAH 4</span>
+            <h4 class="font-display font-extrabold text-slate-900 pt-1">Uji Koneksi &amp; Unduh HTML untuk Netlify</h4>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Tempel URL ke <strong>Tab 1</strong> → klik <strong>Simpan &amp; Uji Koneksi</strong> → klik <strong>Unduh HTML Siap Share Siswa</strong> lalu unggah <code>index.html</code> ke Netlify untuk dibagikan ke kelas 7A–7G.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-end pt-2 border-t border-slate-100">
+        <button type="button" data-action="close-cloud-modal" class="px-5 py-2.5 rounded-xl border border-slate-300 hover:bg-slate-50 text-slate-700 font-bold text-xs cursor-pointer">
+          Tutup Pengaturan GAS
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== MODAL IMPOR / EKSPOR CSV RIIL ==================== -->
+  <div id="importCsvModal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl border border-slate-200 max-w-xl w-full p-6 shadow-2xl space-y-4">
+      <div class="flex items-start justify-between gap-3 pb-3 border-b border-slate-100">
+        <div>
+          <span class="text-xs font-extrabold uppercase tracking-wider text-indigo-700">Impor &amp; Ekspor Massal Excel / Google Sheets</span>
+          <h3 class="font-display font-extrabold text-lg text-slate-900">📂 Impor / Ekspor Data Nilai Riil (CSV)</h3>
+        </div>
+        <button type="button" data-action="close-csv-modal" class="p-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-600 font-bold text-xs cursor-pointer">✕</button>
+      </div>
+
+      <div class="p-3.5 rounded-2xl bg-blue-50/80 border border-blue-200 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <div class="text-xs text-blue-950">
+          <strong>Urutan Kolom CSV:</strong><br />
+          <code>Nama Murid, Kelas (7A-7G), No Presensi, PG (0-40), B/S (0-30), Isian (0-30), Game (0-100), Catatan</code>
+        </div>
+        <div class="flex flex-wrap gap-2 flex-shrink-0">
+          <button
+            type="button"
+            data-action="download-csv-template"
+            class="px-3 py-2 rounded-xl bg-muh-navy hover:bg-muh-blue text-white font-bold text-xs transition cursor-pointer"
+          >
+            📄 Unduh Template CSV
+          </button>
+          <button
+            type="button"
+            data-action="export-csv"
+            class="px-3 py-2 rounded-xl bg-teal-600 hover:bg-teal-700 text-white font-bold text-xs transition cursor-pointer"
+          >
+            ⬇️ Ekspor Rekap CSV (Excel)
+          </button>
+        </div>
+      </div>
+
+      <div>
+        <label for="csvFileInput" class="block text-xs font-bold text-slate-700 mb-1.5">1. Pilih File CSV dari Komputer/HP:</label>
+        <input
+          type="file"
+          id="csvFileInput"
+          accept=".csv,text/csv"
+          class="w-full text-xs text-slate-600 file:mr-3 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-xs file:font-extrabold file:bg-indigo-50 file:text-indigo-700 hover:file:bg-indigo-100"
+        />
+      </div>
+
+      <div>
+        <label for="csvRawTextarea" class="block text-xs font-bold text-slate-700 mb-1.5">2. Atau Tempel Baris CSV di Sini:</label>
+        <textarea
+          id="csvRawTextarea"
+          rows="4"
+          placeholder="Contoh baris riil:&#10;Muhammad Rafi,7A,1,36,27,24,90,Tertib mengikuti pembelajaran"
+          class="w-full px-3.5 py-2.5 rounded-2xl border border-slate-300 text-xs font-mono focus:outline-none focus:ring-2 focus:ring-indigo-600"
+        ></textarea>
+      </div>
+
+      <div class="flex justify-end gap-2">
+        <button type="button" data-action="close-csv-modal" class="px-4 py-2.5 rounded-xl border border-slate-300 text-slate-700 font-bold text-xs cursor-pointer">Batal</button>
+        <button type="button" data-action="process-csv-import" class="px-5 py-2.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white font-extrabold text-xs cursor-pointer">
+          ✓ Proses &amp; Impor CSV
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== MODAL KONFIRMASI KOSONGKAN SEMUA DATA ==================== -->
+  <div id="confirmClearModal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl border border-rose-200 max-w-md w-full p-6 shadow-2xl space-y-4">
+      <div class="flex items-start justify-between gap-3 pb-3 border-b border-slate-100">
+        <div>
+          <span class="text-xs font-extrabold uppercase tracking-wider text-rose-600">Konfirmasi Penghapusan Data</span>
+          <h3 class="font-display font-extrabold text-lg text-slate-900">🗑️ Kosongkan Semua Data Rekap?</h3>
+        </div>
+        <button type="button" data-action="close-confirm-clear" class="p-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-600 font-bold text-xs cursor-pointer">✕</button>
+      </div>
+
+      <p id="confirmClearWarningText" class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+        Tindakan ini akan menghapus seluruh data peserta didik yang tersimpan pada browser ini.
+      </p>
+
+      <label class="flex items-start gap-2.5 p-3 rounded-2xl bg-rose-50 border border-rose-200 text-xs font-bold text-rose-900 cursor-pointer">
+        <input type="checkbox" id="confirmClearCheckbox" class="mt-0.5 w-4 h-4 accent-rose-600 rounded" />
+        <span>Saya yakin ingin mengosongkan seluruh data hasil belajar di tabel rekap ini.</span>
+      </label>
+
+      <div class="flex justify-end gap-2">
+        <button type="button" data-action="close-confirm-clear" class="px-4 py-2.5 rounded-xl border border-slate-300 text-slate-700 font-bold text-xs cursor-pointer">Batal</button>
+        <button
+          type="button"
+          id="executeClearAllBtn"
+          data-action="execute-clear-all"
+          disabled
+          class="px-5 py-2.5 rounded-xl bg-rose-600 hover:bg-rose-700 disabled:opacity-40 disabled:cursor-not-allowed text-white font-extrabold text-xs transition cursor-pointer"
+        >
+          Ya, Kosongkan Semua Data
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== MODAL DIALOG CEPAT ISI IDENTITAS MURID ==================== -->
+  <div id="quickIdentityModal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl border-2 border-muh-navy max-w-md w-full p-6 shadow-2xl space-y-4">
+      <div class="flex items-start justify-between gap-3 pb-3 border-b border-slate-100">
+        <div>
+          <span class="text-xs font-extrabold uppercase tracking-wider text-muh-gold">Identitas Wajib Sebelum Merekam Nilai</span>
+          <h3 class="font-display font-extrabold text-lg text-slate-900">🪪 Lengkapi Identitas Murid Terlebih Dahulu</h3>
+        </div>
+        <button type="button" data-action="close-quick-identity" class="p-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-600 font-bold text-xs cursor-pointer">✕</button>
+      </div>
+
+      <p class="text-xs text-slate-600 leading-relaxed">
+        Agar nilai LKPD, skor Game, dan sertifikatmu otomatis masuk ke <strong>Dashboard Rekap Guru (Drs. Bunyani)</strong> sesuai nama dan kelasmu, silakan lengkapi identitas berikut:
+      </p>
+
+      <div class="space-y-3">
+        <div>
+          <label for="quickStuName" class="block text-xs font-bold text-slate-700 mb-1">Nama Lengkap Murid <span class="text-rose-500">*</span></label>
+          <input
+            type="text"
+            id="quickStuName"
+            placeholder="Contoh: Aisyah Nur Rahmawati"
+            class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-muh-navy"
+          />
+        </div>
+
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label for="quickStuClass" class="block text-xs font-bold text-slate-700 mb-1">Kelas Paralel <span class="text-rose-500">*</span></label>
+            <select
+              id="quickStuClass"
+              class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm font-extrabold text-muh-navy bg-white focus:outline-none focus:ring-2 focus:ring-muh-navy"
+            >
+              <option value="7A">Kelas 7A</option>
+              <option value="7B">Kelas 7B</option>
+              <option value="7C">Kelas 7C</option>
+              <option value="7D">Kelas 7D</option>
+              <option value="7E">Kelas 7E</option>
+              <option value="7F">Kelas 7F</option>
+              <option value="7G">Kelas 7G</option>
+            </select>
+          </div>
+
+          <div>
+            <label for="quickStuAbsen" class="block text-xs font-bold text-slate-700 mb-1">No. Presensi <span class="text-rose-500">*</span></label>
+            <input
+              type="number"
+              id="quickStuAbsen"
+              min="1"
+              max="40"
+              placeholder="1 - 40"
+              class="w-full px-3.5 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-muh-navy"
+            />
+          </div>
+        </div>
+
+        <div class="flex justify-end gap-2 pt-2">
+          <button type="button" data-action="close-quick-identity" class="px-4 py-2.5 rounded-xl border border-slate-300 text-slate-700 font-bold text-xs cursor-pointer">Nanti Saja</button>
+          <button type="button" data-action="submit-quick-identity" class="px-5 py-2.5 rounded-xl bg-muh-navy hover:bg-muh-blue text-white font-extrabold text-xs cursor-pointer">
+            ✓ Simpan &amp; Lanjutkan
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== MODAL PENGATURAN SINKRONISASI CLOUD (GOOGLE SHEETS) ==================== -->
+  <div id="cloudSyncModal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4 overflow-y-auto">
+    <div class="bg-white rounded-3xl border border-slate-200 max-w-2xl w-full p-6 shadow-2xl space-y-4 my-auto">
+      <div class="flex items-start justify-between gap-3 pb-3 border-b border-slate-100">
+        <div>
+          <span class="text-xs font-extrabold uppercase tracking-wider text-sky-700">Sinkronisasi Otomatis HP Siswa → Google Sheets Guru</span>
+          <h3 class="font-display font-extrabold text-lg text-slate-900">☁️ Sinkronisasi Cloud (Google Sheets — Drs. Bunyani)</h3>
+        </div>
+        <button type="button" data-action="close-cloud-modal" class="p-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-600 font-bold text-xs cursor-pointer">✕</button>
+      </div>
+
+      <div class="p-3.5 rounded-2xl bg-blue-50/80 border border-blue-200 text-xs text-blue-950 space-y-1.5 leading-relaxed">
+        <div class="font-extrabold">Langkah Menghubungkan Google Sheets (Gratis Selamanya):</div>
+        <ol class="list-decimal list-inside space-y-1">
+          <li>Buka <strong>Google Sheets</strong> baru → klik <strong>Ekstensi (Extensions) → Apps Script</strong>.</li>
+          <li>Salin kode di bawah, tempel ke Apps Script, lalu klik <strong>Terapkan (Deploy) → Deployment baru → Aplikasi Web</strong> (Akses: <em>Siapa saja / Anyone</em>).</li>
+          <li>Tempelkan <strong>URL Aplikasi Web</strong> (<code>https://script.google.com/macros/s/.../exec</code>) di bawah dan klik <strong>🔌 Uji Koneksi</strong>.</li>
+          <li>Klik <strong>⬇️ Unduh HTML Siap Share Siswa (Terkoneksi Cloud)</strong> untuk diunggah ke Netlify atau dibagikan ke grup WA kelas 7A–7G.</li>
+        </ol>
+      </div>
+
+      <div>
+        <label for="cloudSyncUrlInput" class="block text-xs font-bold text-slate-700 mb-1">URL Web App Google Apps Script:</label>
+        <div class="flex flex-col sm:flex-row gap-2">
+          <input
+            type="url"
+            id="cloudSyncUrlInput"
+            placeholder="https://script.google.com/macros/s/AKfycb.../exec"
+            class="flex-1 px-3.5 py-2.5 rounded-xl border border-slate-300 text-xs font-mono focus:outline-none focus:ring-2 focus:ring-muh-navy"
+          />
+          <button type="button" data-action="save-cloud-url" class="px-4 py-2.5 rounded-xl bg-muh-navy hover:bg-muh-blue text-white font-extrabold text-xs cursor-pointer">
+            💾 Simpan URL
+          </button>
+          <button type="button" data-action="test-cloud-conn" class="px-4 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs cursor-pointer">
+            🔌 Uji Koneksi
+          </button>
+        </div>
+      </div>
+
+      <div class="space-y-1.5">
+        <div class="flex items-center justify-between">
+          <span class="text-xs font-bold text-slate-700">Kode Google Apps Script Siap Salin (Sheet: <code>Rekap_Pancasila_7</code>):</span>
+          <button type="button" data-action="copy-apps-script" class="px-3 py-1 rounded-lg bg-slate-800 hover:bg-slate-900 text-white font-bold text-[11px] cursor-pointer">
+            📋 Salin Kode Apps Script
+          </button>
+        </div>
+        <textarea
+          id="appsScriptSourceBox"
+          readonly
+          rows="7"
+          class="w-full px-3.5 py-2.5 rounded-2xl border border-slate-300 bg-slate-900 text-emerald-300 text-[11px] font-mono focus:outline-none"
+        >function doPost(e) {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = ss.getSheetByName('Rekap_Pancasila_7') || ss.insertSheet('Rekap_Pancasila_7');
+  if (sheet.getLastRow() === 0) {
+    sheet.appendRow(['ID', 'Waktu', 'Nama', 'Kelas', 'Presensi', 'PG', 'BS', 'Isian', 'Game', 'NilaiAkhir', 'Predikat', 'Refleksi', 'AksiNyata']);
+  }
+  var data = JSON.parse(e.postData.contents);
+  var rows = sheet.getDataRange().getValues();
+  var rowIndex = -1;
+  for (var i = 1; i < rows.length; i++) {
+    if (String(rows[i][2]).toLowerCase() === String(data.nama).toLowerCase() && String(rows[i][3]) === String(data.kelas)) {
+      rowIndex = i + 1;
+      break;
+    }
+  }
+  var rowValues = [data.id, new Date(), data.nama, data.kelas, data.absen, data.pg, data.bs, data.isian, data.game, data.final, data.predikat, data.refleksi, data.catatan];
+  if (rowIndex > 0) {
+    sheet.getRange(rowIndex, 1, 1, rowValues.length).setValues([rowValues]);
+  } else {
+    sheet.appendRow(rowValues);
+  }
+  return ContentService.createTextOutput(JSON.stringify({ status: 'ok', message: 'Tersimpan' })).setMimeType(ContentService.MimeType.JSON);
+}
+
+function doGet(e) {
+  var ss = SpreadsheetApp.getActiveSpreadsheet();
+  var sheet = ss.getSheetByName('Rekap_Pancasila_7');
+  if (!sheet || sheet.getLastRow() < 2) {
+    return ContentService.createTextOutput(JSON.stringify({ status: 'ok', records: [] })).setMimeType(ContentService.MimeType.JSON);
+  }
+  var rows = sheet.getDataRange().getValues();
+  var list = [];
+  for (var i = 1; i < rows.length; i++) {
+    list.push({
+      id: String(rows[i][0] || 'CLD-' + i),
+      nama: String(rows[i][2] || ''),
+      kelas: String(rows[i][3] || '7A'),
+      absen: Number(rows[i][4] || 1),
+      pg: Number(rows[i][5] || 0),
+      bs: Number(rows[i][6] || 0),
+      isian: Number(rows[i][7] || 0),
+      game: Number(rows[i][8] || 0),
+      final: Number(rows[i][9] || 0),
+      refleksi: String(rows[i][11] || ''),
+      catatan: String(rows[i][12] || 'Sinkronisasi Cloud')
+    });
+  }
+  return ContentService.createTextOutput(JSON.stringify({ status: 'ok', records: list })).setMimeType(ContentService.MimeType.JSON);
+}</textarea>
+      </div>
+
+      <div class="flex flex-wrap items-center justify-between gap-2 pt-2 border-t border-slate-100">
+        <div class="flex flex-wrap gap-2">
+          <button type="button" data-action="pull-cloud-data" class="px-4 py-2.5 rounded-xl bg-cyan-600 hover:bg-cyan-700 text-white font-extrabold text-xs cursor-pointer">
+            🔄 Tarik Data dari Cloud
+          </button>
+          <button type="button" data-action="download-html" class="px-4 py-2.5 rounded-xl bg-muh-sage hover:opacity-95 text-white font-extrabold text-xs cursor-pointer">
+            ⬇️ Unduh HTML Siap Share Siswa (Terkoneksi Cloud)
+          </button>
+        </div>
+        <button type="button" data-action="close-cloud-modal" class="px-4 py-2.5 rounded-xl border border-slate-300 text-slate-700 font-bold text-xs cursor-pointer">
+          Tutup
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== MODAL FALLBACK SALIN TEKS (SANDBOX SAFE) ==================== -->
+  <div id="clipboardFallbackModal" class="fixed inset-0 z-50 hidden bg-slate-900/60 backdrop-blur-xs flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl border border-slate-200 max-w-lg w-full p-6 shadow-2xl space-y-4">
+      <div class="flex items-start justify-between gap-3 pb-3 border-b border-slate-100">
+        <div>
+          <span class="text-xs font-extrabold uppercase tracking-wider text-muh-navy">Siap Disalin Manual</span>
+          <h3 id="clipboardModalTitle" class="font-display font-extrabold text-lg text-slate-900">📋 Salin Teks Laporan</h3>
+        </div>
+        <button type="button" data-action="close-clipboard-modal" class="p-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-600 font-bold text-xs cursor-pointer">✕</button>
+      </div>
+      <p class="text-xs text-slate-600">
+        Teks di bawah telah diseleksi otomatis. Tekan <strong>Ctrl + C</strong> (atau tahan lama → <strong>Salin / Copy</strong> di HP) untuk menyalin:
+      </p>
+      <textarea
+        id="clipboardFallbackTextarea"
+        readonly
+        rows="5"
+        class="w-full px-3.5 py-2.5 rounded-2xl border-2 border-muh-navy bg-blue-50/40 text-xs font-mono focus:outline-none"
+      ></textarea>
+      <div class="flex justify-end">
+        <button type="button" data-action="close-clipboard-modal" class="px-5 py-2.5 rounded-xl bg-muh-navy text-white font-bold text-xs cursor-pointer">Selesai</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== FOOTER RESMI ==================== -->
+  <footer class="bg-white border-t border-slate-200 mt-10 py-5 no-print">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-slate-500">
+      <div class="font-bold text-slate-700">
+        SMP Muhammadiyah 2 Surabaya • Pendidikan Pancasila Kelas VII Paralel (7A–7G) • Drs. Bunyani
+      </div>
+      <div>
+        Materi: Pelaksanaan Norma dalam Kehidupan Masyarakat • Aplikasi HTML Mandiri Siap Netlify
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== JAVASCRIPT LENGKAP, BERSIH & 100% AKTIF ==================== -->
+  <script>
+    (function () {
+      'use strict';
+
+      /**
+       * =========================================================================
+       * 1. SAFE STORAGE HELPER (TRY/CATCH DENGAN IN-MEMORY FALLBACK)
+       * =========================================================================
+       */
+      var memoryStore = {};
+      var safeStorage = {
+        getItem: function (key) {
+          try {
+            return window.localStorage.getItem(key);
+          } catch (e) {
+            return Object.prototype.hasOwnProperty.call(memoryStore, key) ? memoryStore[key] : null;
+          }
+        },
+        setItem: function (key, value) {
+          try {
+            window.localStorage.setItem(key, value);
+          } catch (e) {
+            memoryStore[key] = String(value);
+          }
+        },
+        removeItem: function (key) {
+          try {
+            window.localStorage.removeItem(key);
+          } catch (e) {
+            delete memoryStore[key];
+          }
+        }
+      };
+
+      var RECAP_STORAGE_KEY = 'smpm2_pancasila_k7_norma_riil_v2';
+      var DRAFT_STORAGE_KEY = 'smpm2_pancasila_k7_norma_draft_v2';
+      var CLOUD_URL_STORAGE_KEY = 'smpm2_pancasila_k7_cloud_url_v2';
+      var GAS_QUEUE_STORAGE_KEY = 'smpm2k7_gas_queue_v1';
+      const EMBEDDED_GAS_URL = "";
+
+      var highlightedRecordId = '';
+// ... existing code ... -->
+      /**
+       * =========================================================================
+       * 14. REKAP DATA RIIL, MAGIC LINK, WHATSAPP SHARING & CLOUD GOOGLE SHEETS
+       * =========================================================================
+       */
+      function getActiveCloudSyncUrl() {
+        var saved = safeStorage.getItem(CLOUD_URL_STORAGE_KEY);
+        if (saved && saved.trim().length > 10) return saved.trim();
+        if (EMBEDDED_GAS_URL && EMBEDDED_GAS_URL.trim().length > 10) return EMBEDDED_GAS_URL.trim();
+        return '';
+      }
+
+      function getGasOfflineQueue() {
+        var raw = safeStorage.getItem(GAS_QUEUE_STORAGE_KEY);
+        if (!raw) return [];
+        try {
+          var arr = JSON.parse(raw);
+          return Array.isArray(arr) ? arr : [];
+        } catch (e) {
+          return [];
+        }
+      }
+
+      function saveGasOfflineQueue(queue) {
+        safeStorage.setItem(GAS_QUEUE_STORAGE_KEY, JSON.stringify(queue || []));
+        updateCloudStatusUi();
+      }
+
+      function enqueueGasRecord(rec) {
+        var queue = getGasOfflineQueue();
+        var replaced = false;
+        for (var i = 0; i < queue.length; i++) {
+          if (queue[i].id === rec.id || (queue[i].nama === rec.nama && queue[i].kelas === rec.kelas)) {
+            queue[i] = rec;
+            replaced = true;
+            break;
+          }
+        }
+        if (!replaced) queue.push(rec);
+        saveGasOfflineQueue(queue);
+      }
+
+      function updateCloudStatusUi() {
+        var url = getActiveCloudSyncUrl();
+        var queue = getGasOfflineQueue();
+        var indicator = document.getElementById('cloudStatusIndicator');
+        var stuBadge = document.getElementById('studentCloudSyncBadge');
+        var queuePill = document.getElementById('studentQueuePill');
+        var modalPill = document.getElementById('gasModalStatusPill');
+        var input = document.getElementById('cloudSyncUrlInput');
+
+        if (input && url && !input.value) input.value = url;
+
+        if (stuBadge) {
+          if (url) {
+            stuBadge.textContent = '☁️ Cloud GAS Aktif';
+            stuBadge.className = 'inline-flex items-center gap-1.5 px-3 py-1.5 rounded-2xl bg-emerald-50 border border-emerald-200 text-muh-sage text-xs font-extrabold';
+          } else {
+            stuBadge.textContent = '☁️ Mode Lokal';
+            stuBadge.className = 'inline-flex items-center gap-1.5 px-3 py-1.5 rounded-2xl bg-slate-100 border border-slate-200 text-slate-700 text-xs font-extrabold';
+          }
+        }
+
+        if (queuePill) {
+          if (queue.length > 0) {
+            queuePill.classList.remove('hidden');
+            queuePill.textContent = '⏳ Antrean Offline: ' + queue.length + ' (Kirim Ulang)';
+          } else {
+            queuePill.classList.add('hidden');
+          }
+        }
+
+        if (modalPill) {
+          if (url) {
+            modalPill.textContent = 'Status: URL GAS Terpasang';
+            modalPill.className = 'px-2.5 py-0.5 rounded-full bg-emerald-100 text-emerald-900 text-[11px] font-extrabold';
+          } else {
+            modalPill.textContent = 'Status: Belum Dikonfigurasi';
+            modalPill.className = 'px-2.5 py-0.5 rounded-full bg-slate-200 text-slate-700 text-[11px] font-extrabold';
+          }
+        }
+
+        if (!indicator) return;
+        if (url) {
+          indicator.textContent = '☁️ Cloud GAS: AKTIF TERHUBUNG' + (queue.length > 0 ? ' • Antrean: ' + queue.length : '');
+          indicator.className = 'px-3 py-1 rounded-full bg-emerald-400/20 border border-emerald-300/40 font-extrabold text-emerald-200';
+        } else {
+          indicator.textContent = '☁️ Cloud GAS: Mode Lokal (Belum ditautkan)';
+          indicator.className = 'px-3 py-1 rounded-full bg-white/10 font-bold text-amber-200';
+        }
+      }
+
+      function pushToGasCloud(rec, silent) {
+        var url = getActiveCloudSyncUrl();
+        if (!url) return;
+
+        if (typeof navigator !== 'undefined' && navigator.onLine === false) {
+          enqueueGasRecord(rec);
+          if (!silent) notify('⏳ Perangkat sedang offline. Nilai disimpan di antrean offline dan akan terkirim otomatis saat online.', 'warning');
+          return;
+        }
+
+        fetch(url, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+          body: JSON.stringify({ action: 'upsertStudent', record: rec })
+        }).then(function () {
+          if (!silent) {
+            notify('☁️ Terkirim ke Google Sheets Drs. Bunyani (' + rec.nama + ' • ' + rec.kelas + ')!', 'success');
+          }
+        }).catch(function () {
+          enqueueGasRecord(rec);
+          if (!silent) {
+            notify('⏳ Koneksi ke Google Sheets terganggu. Nilai disimpan di antrean offline otomatis.', 'warning');
+          }
+        });
+      }
+
+      function flushGasOfflineQueue(manualTrigger) {
+        var url = getActiveCloudSyncUrl();
+        var queue = getGasOfflineQueue();
+        if (!url || queue.length === 0) {
+          if (manualTrigger) notify('Tidak ada data tertunda di antrean offline.', 'info');
+          return;
+        }
+        if (typeof navigator !== 'undefined' && navigator.onLine === false) {
+          if (manualTrigger) notify('Perangkat masih offline. Coba lagi setelah terhubung internet.', 'warning');
+          return;
+        }
+
+        fetch(url, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+          body: JSON.stringify({ action: 'bulkUpsert', records: queue })
+        }).then(function () {
+          saveGasOfflineQueue([]);
+          if (manualTrigger) {
+            notify('☁️ Seluruh ' + queue.length + ' data antrean offline berhasil terkirim ke Google Sheets!', 'success');
+          }
+        }).catch(function () {
+          if (manualTrigger) {
+            notify('Gagal mengirim antrean offline. Periksa koneksi internet Anda.', 'warning');
+          }
+        });
+      }
+
+      function upsertRealTeacherRecord(rec) {
+        var existingIdx = -1;
+        for (var i = 0; i < STATE.teacherRecords.length; i++) {
+          var r = STATE.teacherRecords[i];
+          if (r.id === rec.id || (r.nama.toLowerCase() === rec.nama.toLowerCase() && r.kelas === rec.kelas)) {
+            existingIdx = i;
+            break;
+          }
+        }
+        if (existingIdx >= 0) {
+          STATE.teacherRecords[existingIdx] = rec;
+        } else {
+          STATE.teacherRecords.unshift(rec);
+        }
+        highlightedRecordId = rec.id;
+        saveTeacherRecords();
+        if (STATE.workspace === 'teacher') {
+          renderTeacherTable();
+        }
+      }
+
+      function pushCurrentStudentToTeacherRecap(activityNote) {
+        var nama = STATE.student.nama.trim();
+        var kelas = STATE.student.kelas || '7A';
+        var absen = Number(STATE.student.absen || 1);
+        if (!nama) return null;
+
+        var sum = calculateStudentSummary();
+        var refText = document.getElementById('refleksiBermakna').value.trim();
+        var aksiText = document.getElementById('aksiNyataMingguIni').value.trim();
+
+        var rec = {
+          id: 'RIIL-' + kelas + '-' + absen + '-' + nama.toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 12),
+          nama: nama,
+          kelas: kelas,
+          absen: absen,
+          pg: sum.pg,
+          bs: sum.bs,
+          isian: sum.isian,
+          game: sum.bestGame,
+          final: sum.finalScore,
+          predikat: sum.predicate,
+          c16: STATE.lkpd.c16Breakdown,
+          refleksi: refText || STATE.mindful.note || '',
+          catatan: aksiText || activityNote || 'Hasil belajar murid'
+        };
+
+        upsertRealTeacherRecord(rec);
+        pushToGasCloud(rec, false);
+        return rec;
+      }
+
+      function encodeStudentShareCode() {
+        var nama = STATE.student.nama || 'Murid Kelas 7';
+        var kelas = STATE.student.kelas || '7A';
+        var absen = Number(STATE.student.absen || 1);
+        var sum = calculateStudentSummary();
+        var payload = {
+          v: 2,
+          n: nama,
+          k: kelas,
+          a: absen,
+          p: sum.pg,
+          b: sum.bs,
+          i: sum.isian,
+          g: sum.bestGame,
+          r: (document.getElementById('refleksiBermakna').value.trim() || STATE.mindful.note || '').slice(0, 160),
+          c: (document.getElementById('aksiNyataMingguIni').value.trim() || 'Laporan mandiri murid').slice(0, 160)
+        };
+        var jsonStr = JSON.stringify(payload);
+        var b64 = window.btoa(unescape(encodeURIComponent(jsonStr)));
+        return 'SMPM2K7-' + b64;
+      }
+
+      function buildStudentMagicLink() {
+        var code = encodeStudentShareCode();
+        var baseUrl = window.location.href.split('#')[0];
+        return baseUrl + '#import=' + encodeURIComponent(code);
+      }
+
+      function renderSendToTeacherCardMarkup() {
+        var nama = STATE.student.nama || 'Peserta Didik';
+        var kelas = STATE.student.kelas || '7A';
+        var absen = STATE.student.absen || '-';
+        var sum = calculateStudentSummary();
+        var code = encodeStudentShareCode();
+
+        return (
+          '<div class="p-4 sm:p-5 rounded-2xl bg-gradient-to-br from-blue-50 via-white to-emerald-50 border-2 border-muh-navy/30 space-y-3">' +
+          '<div class="flex flex-wrap items-center justify-between gap-2">' +
+          '<div>' +
+          '<span class="text-[11px] font-extrabold uppercase tracking-wider text-muh-navy">Kirim Laporan Hasil Belajar ke Drs. Bunyani</span>' +
+          '<h4 class="font-display font-extrabold text-sm sm:text-base text-slate-900">' +
+          escapeHtml(nama) + ' (' + escapeHtml(kelas) + ' • Presensi ' + escapeHtml(String(absen)) + ') — Nilai Akhir: <span class="text-muh-navy">' + sum.finalScore + '</span>' +
+          '</h4>' +
+          '</div>' +
+          '<span class="px-2.5 py-1 rounded-full bg-emerald-100 text-muh-sage text-[11px] font-extrabold">Siap Dikirim ke Guru</span>' +
+          '</div>' +
+          '<div class="grid grid-cols-1 sm:grid-cols-3 gap-2">' +
+          '<button type="button" data-action="share-whatsapp" class="py-2.5 px-3 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-extrabold text-xs transition flex items-center justify-center gap-1.5 cursor-pointer">' +
+          '<span>💬 Kirim Laporan ke WhatsApp Pak Bunyani</span>' +
+          '</button>' +
+          '<button type="button" data-action="copy-magic-link" class="py-2.5 px-3 rounded-xl bg-muh-navy hover:bg-muh-blue text-white font-extrabold text-xs transition flex items-center justify-center gap-1.5 cursor-pointer">' +
+          '<span>🔗 Salin Tautan Ajaib untuk Guru</span>' +
+          '</button>' +
+          '<button type="button" data-action="copy-report-code" class="py-2.5 px-3 rounded-xl border border-slate-300 bg-white hover:bg-slate-50 text-slate-800 font-extrabold text-xs transition flex items-center justify-center gap-1.5 cursor-pointer">' +
+          '<span>📋 Salin Kode Laporan (' + code.slice(0, 14) + '...)</span>' +
+          '</button>' +
+          '</div>' +
+          '</div>'
+        );
+      }
+
+      function renderStageSendTeacherBoxes() {
+        var markup = renderSendToTeacherCardMarkup();
+        var b3 = document.getElementById('stage3SendTeacherBox');
+        var b4 = document.getElementById('stage4SendTeacherBox');
+        var b5 = document.getElementById('stage5SendTeacherBox');
+        if (b3) b3.innerHTML = markup;
+        if (b4) {
+          b4.classList.remove('hidden');
+          b4.innerHTML = markup;
+        }
+        if (b5) b5.innerHTML = markup;
+      }
+
+      function sendReportViaWhatsApp() {
+        if (!STATE.student.nama || !STATE.student.absen) {
+          openQuickIdentityModal(function () {
+            sendReportViaWhatsApp();
+          });
+          return;
+        }
+        pushCurrentStudentToTeacherRecap('Mengirim laporan via WhatsApp');
+        var sum = calculateStudentSummary();
+        var code = encodeStudentShareCode();
+        var magicLink = buildStudentMagicLink();
+        var isHttp = window.location.protocol === 'http:' || window.location.protocol === 'https:';
+
+        var lines = [
+          'Assalamu alaikum Wr. Wb. Bapak Drs. Bunyani,',
+          'Laporan Hasil Belajar Pendidikan Pancasila (Pelaksanaan Norma)',
+          'SMP Muhammadiyah 2 Surabaya',
+          '',
+          'Nama : ' + STATE.student.nama,
+          'Kelas : ' + STATE.student.kelas,
+          'No. Presensi : ' + STATE.student.absen,
+          'Skor PG (C1-C6) : ' + sum.pg + '/40',
+          'Skor B/S Lit-Num : ' + sum.bs + '/30',
+          'Skor Isian Singkat : ' + sum.isian + '/30',
+          'Skor Game Tertinggi : ' + sum.bestGame + '/100',
+          'Nilai Akhir Terpadu : ' + sum.finalScore + ' (' + sum.predicate + ')'
+        ];
+        if (isHttp) {
+          lines.push('', 'Tautan Ajaib Rekap Otomatis Guru:', magicLink);
+        }
+        lines.push('', 'Kode Laporan Murid (Tempel di Dashboard Rekap Guru):', code);
+
+        var waUrl = 'https://wa.me/?text=' + encodeURIComponent(lines.join('\n'));
+        var popup = window.open(waUrl, '_blank', 'noopener,noreferrer');
+        if (!popup) {
+          copyToClipboard(lines.join('\n'), 'Pesan Laporan WhatsApp untuk Pak Bunyani');
+        }
+      }
+
+      function copyMagicLinkForTeacher() {
+        if (!STATE.student.nama || !STATE.student.absen) {
+          openQuickIdentityModal(function () {
+            copyMagicLinkForTeacher();
+          });
+          return;
+        }
+        pushCurrentStudentToTeacherRecap('Menyalin Tautan Ajaib untuk Guru');
+        var magicLink = buildStudentMagicLink();
+        copyToClipboard(magicLink, 'Tautan Ajaib (#import=SMPM2K7-...) untuk Guru');
+      }
+
+      function copyStudentReportCode() {
+        if (!STATE.student.nama || !STATE.student.absen) {
+          openQuickIdentityModal(function () {
+            copyStudentReportCode();
+          });
+          return;
+        }
+        pushCurrentStudentToTeacherRecap('Menyalin Kode Laporan Murid');
+        var code = encodeStudentShareCode();
+        copyToClipboard(code, 'Kode Laporan Murid (SMPM2K7-...)');
+      }
+
+      function decodeAndImportCodeString(rawInput, silentToast) {
+        var text = String(rawInput || '').trim();
+        if (!text) return null;
+
+        var decodedText = text;
+        try {
+          decodedText = decodeURIComponent(text);
+        } catch (e) {
+          decodedText = text;
+        }
+
+        var match = decodedText.match(/SMPM2K7-[A-Za-z0-9+/=_-]+/);
+        if (!match) return null;
+
+        var b64 = match[0].replace(/^SMPM2K7-/, '');
+        try {
+          var jsonStr = decodeURIComponent(escape(window.atob(b64)));
+          var obj = JSON.parse(jsonStr);
+          if (!obj || !obj.n) return null;
+
+          var pg = Math.max(0, Math.min(40, Number(obj.p || 0)));
+          var bs = Math.max(0, Math.min(30, Number(obj.b || 0)));
+          var isian = Math.max(0, Math.min(30, Number(obj.i || 0)));
+          var game = Math.max(0, Math.min(100, Number(obj.g || 0)));
+          var totalLkpd = pg + bs + isian;
+          var finalScore = Math.round(totalLkpd * 0.7 + game * 0.3);
+
+          var rec = {
+            id: 'IMP-' + (obj.k || '7A') + '-' + (obj.a || 1) + '-' + String(obj.n).toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 12),
+            nama: String(obj.n).trim(),
+            kelas: String(obj.k || '7A'),
+            absen: Number(obj.a || 1),
+            pg: pg,
+            bs: bs,
+            isian: isian,
+            game: game,
+            final: finalScore,
+            refleksi: String(obj.r || ''),
+            catatan: String(obj.c || 'Diimpor dari Laporan Murid')
+          };
+
+          upsertRealTeacherRecord(rec);
+          if (!silentToast) {
+            notify('Berhasil mengimpor nilai ' + rec.nama + ' (Kelas ' + rec.kelas + ', Nilai Akhir: ' + rec.final + ')!', 'success');
+          }
+          return rec;
+        } catch (e) {
+          return null;
+        }
+      }
+
+      function checkMagicImportUrlOnLoad() {
+        try {
+          var hash = window.location.hash || '';
+          var search = window.location.search || '';
+          var combined = hash + '&' + search;
+          if (combined.indexOf('SMPM2K7-') !== -1) {
+            var imported = decodeAndImportCodeString(combined, true);
+            if (imported) {
+              switchView('teacher');
+              notify('Tautan Ajaib berhasil diimpor: ' + imported.nama + ' (' + imported.kelas + ' • Nilai ' + imported.final + ')!', 'success');
+              if (window.history && window.history.replaceState) {
+                window.history.replaceState(null, '', window.location.pathname + window.location.search);
+              }
+            }
+          }
+        } catch (e) {
+          // Ignore URL parse issues
+        }
+      }
+
+      /**
+       * =========================================================================
+       * 15. MODALS & DASHBOARD REKAP GURU (DRS. BUNYANI)
+       * =========================================================================
+       */
+      function openQuickIdentityModal(callback) {
+        pendingIdentityCallback = typeof callback === 'function' ? callback : null;
+        document.getElementById('quickStuName').value = STATE.student.nama || '';
+        document.getElementById('quickStuClass').value = STATE.student.kelas || '7A';
+        document.getElementById('quickStuAbsen').value = STATE.student.absen || '';
+        document.getElementById('quickIdentityModal').classList.remove('hidden');
+        setTimeout(function () {
+          document.getElementById('quickStuName').focus();
+        }, 50);
+      }
+
+      function closeQuickIdentityModal() {
+        document.getElementById('quickIdentityModal').classList.add('hidden');
+        pendingIdentityCallback = null;
+      }
+
+      function submitQuickIdentityModal() {
+        var nama = document.getElementById('quickStuName').value.trim();
+        var kelas = document.getElementById('quickStuClass').value;
+        var absen = document.getElementById('quickStuAbsen').value;
+        if (!nama || !absen) {
+          notify('Mohon isi Nama Lengkap Murid dan Nomor Presensi (1–40)!', 'warning');
+          return;
+        }
+        document.getElementById('stuName').value = nama;
+        document.getElementById('stuClass').value = kelas;
+        document.getElementById('stuAbsen').value = absen;
+        highlightClassPill(kelas);
+        saveIdentity();
+
+        var cb = pendingIdentityCallback;
+        closeQuickIdentityModal();
+        if (cb) cb();
+      }
+
+      function openAddModal() {
+        document.getElementById('realEditRecordId').value = '';
+        document.getElementById('realFormModalTitle').textContent = '➕ Tambah Data Riil Murid';
+        document.getElementById('realInputNama').value = '';
+        document.getElementById('realInputKelas').value = '7A';
+        document.getElementById('realInputAbsen').value = '';
+        document.getElementById('realInputPg').value = '0';
+        document.getElementById('realInputBs').value = '0';
+        document.getElementById('realInputIsian').value = '0';
+        document.getElementById('realInputGame').value = '0';
+        document.getElementById('realInputRefleksi').value = '';
+        document.getElementById('realInputCatatan').value = '';
+        updateRealModalPreview();
+        document.getElementById('realStudentFormModal').classList.remove('hidden');
+      }
+
+      function openEditRealStudentModal(recordId) {
+        var rec = null;
+        for (var i = 0; i < STATE.teacherRecords.length; i++) {
+          if (STATE.teacherRecords[i].id === recordId) {
+            rec = STATE.teacherRecords[i];
+            break;
+          }
+        }
+        if (!rec) return;
+
+        document.getElementById('realEditRecordId').value = rec.id;
+        document.getElementById('realFormModalTitle').textContent = '✏️ Edit Data Nilai Murid: ' + rec.nama;
+        document.getElementById('realInputNama').value = rec.nama;
+        document.getElementById('realInputKelas').value = rec.kelas;
+        document.getElementById('realInputAbsen').value = rec.absen;
+        document.getElementById('realInputPg').value = rec.pg;
+        document.getElementById('realInputBs').value = rec.bs;
+        document.getElementById('realInputIsian').value = rec.isian;
+        document.getElementById('realInputGame').value = rec.game;
+        document.getElementById('realInputRefleksi').value = rec.refleksi || '';
+        document.getElementById('realInputCatatan').value = rec.catatan || '';
+        updateRealModalPreview();
+        document.getElementById('realStudentFormModal').classList.remove('hidden');
+      }
+
+      function closeAddModal() {
+        document.getElementById('realStudentFormModal').classList.add('hidden');
+      }
+
+      function updateRealModalPreview() {
+        var pg = Math.max(0, Math.min(40, Number(document.getElementById('realInputPg').value || 0)));
+        var bs = Math.max(0, Math.min(30, Number(document.getElementById('realInputBs').value || 0)));
+        var isian = Math.max(0, Math.min(30, Number(document.getElementById('realInputIsian').value || 0)));
+        var game = Math.max(0, Math.min(100, Number(document.getElementById('realInputGame').value || 0)));
+
+        var totalLkpd = pg + bs + isian;
+        var finalScore = Math.round(totalLkpd * 0.7 + game * 0.3);
+
+        document.getElementById('realPreviewLkpd').textContent = String(totalLkpd);
+        document.getElementById('realPreviewFinal').textContent = String(finalScore);
+
+        var pill = document.getElementById('realPreviewPredicate');
+        if (finalScore >= 75) {
+          pill.textContent = 'Tuntas (KKTP ≥ 75)';
+          pill.className = 'px-3 py-1 rounded-full border text-xs font-extrabold bg-emerald-100 text-emerald-900 border-emerald-300';
+        } else {
+          pill.textContent = 'Perlu Pembinaan (< 75)';
+          pill.className = 'px-3 py-1 rounded-full border text-xs font-extrabold bg-amber-100 text-amber-900 border-amber-300';
+        }
+      }
+
+      function saveRealStudentForm() {
+        var editId = document.getElementById('realEditRecordId').value.trim();
+        var nama = document.getElementById('realInputNama').value.trim();
+        var kelas = document.getElementById('realInputKelas').value;
+        var absen = Number(document.getElementById('realInputAbsen').value || 0);
+        var pg = Math.max(0, Math.min(40, Number(document.getElementById('realInputPg').value || 0)));
+        var bs = Math.max(0, Math.min(30, Number(document.getElementById('realInputBs').value || 0)));
+        var isian = Math.max(0, Math.min(30, Number(document.getElementById('realInputIsian').value || 0)));
+        var game = Math.max(0, Math.min(100, Number(document.getElementById('realInputGame').value || 0)));
+        var refleksi = document.getElementById('realInputRefleksi').value.trim();
+        var catatan = document.getElementById('realInputCatatan').value.trim();
+
+        if (!nama || absen < 1) {
+          notify('Nama Lengkap Murid dan Nomor Presensi wajib diisi!', 'warning');
+          return;
+        }
+
+        var totalLkpd = pg + bs + isian;
+        var finalScore = Math.round(totalLkpd * 0.7 + game * 0.3);
+        var recId = editId || 'MNL-' + kelas + '-' + absen + '-' + Date.now();
+
+        var rec = {
+          id: recId,
+          nama: nama,
+          kelas: kelas,
+          absen: absen,
+          pg: pg,
+          bs: bs,
+          isian: isian,
+          game: game,
+          final: finalScore,
+          refleksi: refleksi,
+          catatan: catatan || 'Input manual oleh Drs. Bunyani'
+        };
+
+        upsertRealTeacherRecord(rec);
+        pushToGasCloud(rec, true);
+        closeAddModal();
+        notify((editId ? 'Data murid berhasil diperbarui: ' : 'Data riil murid ditambahkan: ') + nama + ' (Kelas ' + kelas + ')!', 'success');
+      }
+
+      function openStudentDetailModal(recordId) {
+        var rec = null;
+        for (var i = 0; i < STATE.teacherRecords.length; i++) {
+          if (STATE.teacherRecords[i].id === recordId) {
+            rec = STATE.teacherRecords[i];
+            break;
+          }
+        }
+        if (!rec) return;
+
+        var totalLkpd = rec.pg + rec.bs + rec.isian;
+        var isPass = rec.final >= 75;
+        var c16 = rec.c16 || null;
+        var c16Markup = '';
+        if (c16) {
+          c16Markup =
+            '<div class="p-3.5 rounded-2xl bg-blue-50/70 border border-blue-200">' +
+            '<div class="text-xs font-extrabold text-muh-navy mb-2">Penguasaan Level Kognitif Studi Kasus (C1–C6):</div>' +
+            '<div class="grid grid-cols-6 gap-1.5 text-center">' +
+            ['C1', 'C2', 'C3', 'C4', 'C5', 'C6'].map(function (lv) {
+              return '<div class="p-2 rounded-xl bg-white border border-blue-200"><div class="text-[10px] font-extrabold text-slate-500">' + lv + '</div><div class="font-extrabold text-xs text-muh-navy">' + Number(c16[lv] || 0) + '%</div></div>';
+            }).join('') +
+            '</div></div>';
+        }
+
+        document.getElementById('detailModalTitle').textContent = rec.nama + ' • Kelas ' + rec.kelas + ' (Presensi ' + rec.absen + ')';
+        document.getElementById('studentDetailModalBody').innerHTML =
+          '<div class="grid grid-cols-2 sm:grid-cols-5 gap-2 text-center">' +
+          '<div class="p-3 rounded-2xl bg-slate-50 border border-slate-200"><div class="text-[10px] font-bold uppercase text-slate-500">PG C1–C6</div><div class="font-extrabold text-base text-muh-navy">' + rec.pg + '/40</div></div>' +
+          '<div class="p-3 rounded-2xl bg-slate-50 border border-slate-200"><div class="text-[10px] font-bold uppercase text-slate-500">B/S Lit-Num</div><div class="font-extrabold text-base text-muh-sage">' + rec.bs + '/30</div></div>' +
+          '<div class="p-3 rounded-2xl bg-slate-50 border border-slate-200"><div class="text-[10px] font-bold uppercase text-slate-500">Isian</div><div class="font-extrabold text-base text-muh-gold">' + rec.isian + '/30</div></div>' +
+          '<div class="p-3 rounded-2xl bg-slate-50 border border-slate-200"><div class="text-[10px] font-bold uppercase text-slate-500">Skor Game</div><div class="font-extrabold text-base text-indigo-700">' + rec.game + '</div></div>' +
+          '<div class="col-span-2 sm:col-span-1 p-3 rounded-2xl ' + (isPass ? 'bg-emerald-50 border-emerald-200 text-emerald-900' : 'bg-amber-50 border-amber-200 text-amber-900') + ' border"><div class="text-[10px] font-extrabold uppercase">Nilai Akhir</div><div class="font-extrabold text-lg">' + rec.final + '</div></div>' +
+          '</div>' +
+          c16Markup +
+          '<div class="p-3.5 rounded-2xl bg-slate-50 border border-slate-200">' +
+          '<div class="text-xs font-extrabold uppercase text-slate-600 mb-1">Refleksi Mendalam Murid:</div>' +
+          '<p class="text-xs text-slate-800 italic">' + escapeHtml(rec.refleksi || 'Belum ada catatan refleksi tertulis.') + '</p>' +
+          '</div>' +
+          '<div class="p-3.5 rounded-2xl bg-emerald-50/70 border border-emerald-200">' +
+          '<div class="text-xs font-extrabold uppercase text-muh-sage mb-1">Rencana Aksi Nyata / Catatan Guru (Total LKPD: ' + totalLkpd + '/100):</div>' +
+          '<p class="text-xs text-slate-800">' + escapeHtml(rec.catatan || '-') + '</p>' +
+          '</div>';
+
+        document.getElementById('studentDetailModal').classList.remove('hidden');
+      }
+
+      function closeStudentDetailModal() {
+        document.getElementById('studentDetailModal').classList.add('hidden');
+      }
+
+      function deleteTeacherRecord(recordId) {
+        STATE.teacherRecords = STATE.teacherRecords.filter(function (r) {
+          return r.id !== recordId;
+        });
+        saveTeacherRecords();
+        renderTeacherTable();
+        notify('Baris data murid berhasil dihapus.', 'info');
+      }
+
+      function openImportCodeModal() {
+        document.getElementById('pasteReportCodeInput').value = '';
+        document.getElementById('importCodeModal').classList.remove('hidden');
+      }
+
+      function closeImportCodeModal() {
+        document.getElementById('importCodeModal').classList.add('hidden');
+      }
+
+      function processImportedStudentCode() {
+        var raw = document.getElementById('pasteReportCodeInput').value;
+        var res = decodeAndImportCodeString(raw, false);
+        if (!res) {
+          notify('Kode laporan tidak dikenali. Pastikan terdapat kode berawalan SMPM2K7-... atau Tautan Ajaib dari murid!', 'error');
+          return;
+        }
+        closeImportCodeModal();
+        renderTeacherTable();
+      }
+
+      function openCsvModal() {
+        document.getElementById('csvRawTextarea').value = '';
+        document.getElementById('importCsvModal').classList.remove('hidden');
+      }
+
+      function closeCsvModal() {
+        document.getElementById('importCsvModal').classList.add('hidden');
+      }
+
+      function triggerDownloadBlob(filename, content, mimeType) {
+        var blob = new Blob([content], { type: mimeType || 'text/plain;charset=utf-8;' });
+        var url = URL.createObjectURL(blob);
+        var a = document.createElement('a');
+        a.href = url;
+        a.download = filename;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        setTimeout(function () {
+          URL.revokeObjectURL(url);
+        }, 1000);
+      }
+
+      function downloadCsvTemplate() {
+        var header = 'Nama Murid,Kelas (7A-7G),No Presensi,PG (0-40),BS (0-30),Isian (0-30),Game (0-100),Catatan\n';
+        triggerDownloadBlob('Template_Rekap_Pancasila_Kelas7_SMPM2_Surabaya.csv', header, 'text/csv;charset=utf-8;');
+        notify('Template CSV kosong berhasil diunduh!', 'success');
+      }
+
+      function exportCsv() {
+        if (STATE.teacherRecords.length === 0) {
+          notify('Belum ada data murid untuk diekspor ke CSV.', 'warning');
+          return;
+        }
+        var lines = ['No,Nama Murid,Kelas,No Presensi,PG (40),BS (30),Isian (30),Total LKPD (100),Skor Game,Nilai Akhir,Status KKTP (75),Refleksi,Catatan'];
+        for (var i = 0; i < STATE.teacherRecords.length; i++) {
+          var r = STATE.teacherRecords[i];
+          var totalLkpd = r.pg + r.bs + r.isian;
+          var status = r.final >= 75 ? 'Tuntas (>=75)' : 'Perlu Pembinaan (<75)';
+          lines.push([
+            i + 1,
+            '"' + String(r.nama).replace(/"/g, '""') + '"',
+            r.kelas,
+            r.absen,
+            r.pg,
+            r.bs,
+            r.isian,
+            totalLkpd,
+            r.game,
+            r.final,
+            '"' + status + '"',
+            '"' + String(r.refleksi || '').replace(/"/g, '""') + '"',
+            '"' + String(r.catatan || '').replace(/"/g, '""') + '"'
+          ].join(','));
+        }
+        triggerDownloadBlob('Rekap_Nilai_Pancasila_Kelas7_SMPM2_Surabaya.csv', lines.join('\n'), 'text/csv;charset=utf-8;');
+        notify('Rekap nilai berhasil diekspor ke file CSV!', 'success');
+      }
+
+      function parseAndImportCsvText(csvText) {
+        var lines = String(csvText || '').split(/\r?\n/);
+        var count = 0;
+        var validClasses = ['7A', '7B', '7C', '7D', '7E', '7F', '7G'];
+
+        for (var i = 0; i < lines.length; i++) {
+          var line = lines[i].trim();
+          if (!line) continue;
+          var sep = line.indexOf(';') !== -1 && line.indexOf(',') === -1 ? ';' : ',';
+          var cols = line.split(sep).map(function (c) {
+            return c.replace(/^"|"$/g, '').trim();
+          });
+          if (cols.length < 3) continue;
+          if (cols[0].toLowerCase().indexOf('nama') === 0) continue;
+
+          var nama = cols[0];
+          var kelas = validClasses.indexOf(cols[1].toUpperCase()) !== -1 ? cols[1].toUpperCase() : '7A';
+          var absen = Number(cols[2] || 1);
+          var pg = Math.max(0, Math.min(40, Number(cols[3] || 0)));
+          var bs = Math.max(0, Math.min(30, Number(cols[4] || 0)));
+          var isian = Math.max(0, Math.min(30, Number(cols[5] || 0)));
+          var game = Math.max(0, Math.min(100, Number(cols[6] || 0)));
+          var catatan = cols[7] || 'Impor CSV';
+
+          var totalLkpd = pg + bs + isian;
+          var finalScore = Math.round(totalLkpd * 0.7 + game * 0.3);
+
+          upsertRealTeacherRecord({
+            id: 'CSV-' + kelas + '-' + absen + '-' + nama.toLowerCase().replace(/[^a-z0-9]/g, '').slice(0, 10),
+            nama: nama,
+            kelas: kelas,
+            absen: absen,
+            pg: pg,
+            bs: bs,
+            isian: isian,
+            game: game,
+            final: finalScore,
+            refleksi: '',
+            catatan: catatan
+          });
+          count++;
+        }
+        return count;
+      }
+
+      function processCsvImport() {
+        var raw = document.getElementById('csvRawTextarea').value;
+        var importedCount = parseAndImportCsvText(raw);
+        if (importedCount === 0) {
+          notify('Tidak ada baris data valid yang terbaca. Pastikan urutan kolom CSV sesuai petunjuk!', 'warning');
+          return;
+        }
+        closeCsvModal();
+        renderTeacherTable();
+        notify('Berhasil mengimpor ' + importedCount + ' data riil murid dari CSV!', 'success');
+      }
+
+      function handleCsvFileUpload(file) {
+        if (!file) return;
+        var reader = new FileReader();
+        reader.onload = function (evt) {
+          document.getElementById('csvRawTextarea').value = String(evt.target.result || '');
+          notify('File CSV terbaca. Klik "Proses & Impor CSV" untuk memasukkan data ke tabel!', 'info');
+        };
+        reader.readAsText(file);
+      }
+
+      function confirmClearAll() {
+        if (STATE.teacherRecords.length === 0) {
+          notify('Tabel rekap sudah dalam keadaan kosong (0 data).', 'info');
+          return;
+        }
+        document.getElementById('confirmClearWarningText').textContent =
+          'Tindakan ini akan menghapus seluruh ' + STATE.teacherRecords.length + ' data murid yang tersimpan pada browser ini.';
+        var cb = document.getElementById('confirmClearCheckbox');
+        var btn = document.getElementById('executeClearAllBtn');
+        cb.checked = false;
+        btn.disabled = true;
+        document.getElementById('confirmClearModal').classList.remove('hidden');
+      }
+
+      function closeConfirmClearModal() {
+        document.getElementById('confirmClearModal').classList.add('hidden');
+      }
+
+      function executeClearAllTeacherData() {
+        STATE.teacherRecords = [];
+        saveTeacherRecords();
+        closeConfirmClearModal();
+        renderTeacherTable();
+        notify('Seluruh data rekap berhasil dikosongkan (0 data).', 'success');
+      }
+
+      function openCloudSyncModal() {
+        document.getElementById('cloudSyncUrlInput').value = getActiveCloudSyncUrl();
+        switchGasModalTab('config');
+        updateCloudStatusUi();
+        document.getElementById('cloudSyncModal').classList.remove('hidden');
+      }
+
+      function closeCloudSyncModal() {
+        document.getElementById('cloudSyncModal').classList.add('hidden');
+      }
+
+      function switchGasModalTab(tabKey) {
+        var tabs = ['config', 'code', 'guide'];
+        for (var i = 0; i < tabs.length; i++) {
+          var t = tabs[i];
+          var btn = document.getElementById('gasTabBtn_' + t);
+          var panel = document.getElementById('gasTabPanel_' + t);
+          if (btn) {
+            btn.className =
+              t === tabKey
+                ? 'flex-1 min-w-[160px] py-2 px-3 rounded-xl bg-muh-navy text-white font-extrabold text-xs transition cursor-pointer'
+                : 'flex-1 min-w-[160px] py-2 px-3 rounded-xl text-slate-700 hover:bg-white font-extrabold text-xs transition cursor-pointer';
+          }
+          if (panel) {
+            panel.classList.toggle('hidden', t !== tabKey);
+          }
+        }
+      }
+
+      function testCloudSyncConnection() {
+        var url = document.getElementById('cloudSyncUrlInput').value.trim() || getActiveCloudSyncUrl();
+        var box = document.getElementById('gasTestResultBox');
+        if (!url) {
+          notify('Masukkan URL Web App Google Apps Script terlebih dahulu!', 'warning');
+          return;
+        }
+        safeStorage.setItem(CLOUD_URL_STORAGE_KEY, url);
+        updateCloudStatusUi();
+
+        if (box) {
+          box.classList.remove('hidden');
+          box.className = 'p-3 rounded-xl text-xs font-bold bg-blue-100 text-muh-navy';
+          box.textContent = '⏳ Menguji koneksi GET ?action=ping ke Google Apps Script...';
+        }
+
+        var pingUrl = url + (url.indexOf('?') === -1 ? '?action=ping' : '&action=ping');
+        fetch(pingUrl)
+          .then(function (res) {
+            return res.json();
+          })
+          .then(function (data) {
+            if (data && data.status === 'ok') {
+              var msg = '✅ ' + (data.message || 'Koneksi Google Apps Script BERHASIL!') + ' (Tercatat ' + Number(data.totalRows || 0) + ' baris di sheet Rekap_Nilai_7A_7G).';
+              if (box) {
+                box.className = 'p-3 rounded-xl text-xs font-bold bg-emerald-100 text-emerald-950 border border-emerald-300';
+                box.textContent = msg;
+              }
+              notify(msg, 'success');
+            } else {
+              var warnMsg = '⚠️ Respons diterima, pastikan akses Web App diatur ke "Siapa saja / Anyone".';
+              if (box) {
+                box.className = 'p-3 rounded-xl text-xs font-bold bg-amber-100 text-amber-950';
+                box.textContent = warnMsg;
+              }
+              notify(warnMsg, 'warning');
+            }
+          })
+          .catch(function () {
+            var errMsg = '❌ Gagal menghubungi URL GAS. Pastikan URL berakhiran /exec dan telah di-deploy sebagai Web App (Anyone).';
+            if (box) {
+              box.className = 'p-3 rounded-xl text-xs font-bold bg-rose-100 text-rose-950';
+              box.textContent = errMsg;
+            }
+            notify(errMsg, 'error');
+          });
+      }
+
+      function pullCloudDataFromSheets() {
+        var inputEl = document.getElementById('cloudSyncUrlInput');
+        var url = (inputEl && inputEl.value.trim()) || getActiveCloudSyncUrl();
+        if (!url) {
+          openCloudSyncModal();
+          notify('Silakan tempel URL Web App Google Apps Script terlebih dahulu!', 'warning');
+          return;
+        }
+        safeStorage.setItem(CLOUD_URL_STORAGE_KEY, url);
+        updateCloudStatusUi();
+        notify('🔄 Menarik semua data siswa dari Google Sheets (?action=getAll)...', 'info');
+
+        var getAllUrl = url + (url.indexOf('?') === -1 ? '?action=getAll' : '&action=getAll');
+        fetch(getAllUrl)
+          .then(function (res) {
+            return res.json();
+          })
+          .then(function (data) {
+            if (!data || !Array.isArray(data.records)) {
+              notify('Tidak ada data murid yang terbaca dari Google Sheets.', 'warning');
+              return;
+            }
+            var imported = 0;
+            for (var i = 0; i < data.records.length; i++) {
+              var r = data.records[i];
+              if (!r.nama) continue;
+              var totalLkpd = Number(r.pg || 0) + Number(r.bs || 0) + Number(r.isian || 0);
+              var finalScore = Number(r.final || Math.round(totalLkpd * 0.7 + Number(r.game || 0) * 0.3));
+              upsertRealTeacherRecord({
+                id: r.id || 'GAS-' + r.kelas + '-' + r.absen + '-' + i,
+                nama: r.nama,
+                kelas: r.kelas || '7A',
+                absen: Number(r.absen || 1),
+                pg: Number(r.pg || 0),
+                bs: Number(r.bs || 0),
+                isian: Number(r.isian || 0),
+                game: Number(r.game || 0),
+                final: finalScore,
+                refleksi: r.refleksi || '',
+                catatan: r.catatan || 'Sinkronisasi Google Sheets',
+                c16: r.c16 || null
+              });
+              imported++;
+            }
+            renderTeacherTable();
+            notify('✅ Sinkronisasi selesai! ' + imported + ' data riil murid berhasil dimuat dari Google Sheets.', 'success');
+          })
+          .catch(function () {
+            notify('Gagal menarik data dari Google Sheets. Periksa URL Web App dan koneksi internet.', 'error');
+          });
+      }
+
+      function bulkUpsertToGasSheets() {
+        var inputEl = document.getElementById('cloudSyncUrlInput');
+        var url = (inputEl && inputEl.value.trim()) || getActiveCloudSyncUrl();
+        if (!url) {
+          notify('Masukkan URL Web App Google Apps Script terlebih dahulu!', 'warning');
+          return;
+        }
+        if (STATE.teacherRecords.length === 0) {
+          notify('Tabel rekap lokal masih kosong (0 data). Tidak ada data untuk diunggah.', 'warning');
+          return;
+        }
+        safeStorage.setItem(CLOUD_URL_STORAGE_KEY, url);
+        updateCloudStatusUi();
+        notify('⬆️ Mengunggah ' + STATE.teacherRecords.length + ' data lokal ke Google Sheets (action=bulkUpsert)...', 'info');
+
+        fetch(url, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+          body: JSON.stringify({ action: 'bulkUpsert', records: STATE.teacherRecords })
+        }).then(function () {
+          notify('✅ Berhasil mengunggah ' + STATE.teacherRecords.length + ' data murid ke Google Sheets!', 'success');
+        }).catch(function () {
+          notify('Gagal mengunggah data ke Google Sheets. Periksa koneksi internet.', 'error');
+        });
+      }
+
+      function copyAppsScriptCode() {
+        var code = document.getElementById('appsScriptSourceBox').value;
+        copyToClipboard(code, 'Kode Google Apps Script (Code.gs)');
+      }
+
+      function downloadCodeGsFile() {
+        var code = document.getElementById('appsScriptSourceBox').value;
+        triggerDownloadBlob('Code.gs', code, 'text/plain;charset=utf-8;');
+        notify('File Code.gs berhasil diunduh!', 'success');
+      }
+
+      function downloadSelfHtml() {
+        var htmlDoc = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+        var activeUrl = getActiveCloudSyncUrl();
+        if (activeUrl) {
+          htmlDoc = htmlDoc.replace(/const EMBEDDED_GAS_URL = "[^"]*";/, 'const EMBEDDED_GAS_URL = "' + activeUrl.replace(/"/g, '') + '";');
+        }
+        triggerDownloadBlob('index.html', htmlDoc, 'text/html;charset=utf-8;');
+        notify(
+          activeUrl
+            ? 'File index.html mandiri dengan URL Google Apps Script tertanam berhasil diunduh!'
+            : 'File index.html mandiri siap deploy ke Netlify berhasil diunduh!',
+          'success'
+        );
+      }
+
+      function closeCloudSyncModal() {
+        document.getElementById('cloudSyncModal').classList.add('hidden');
+      }
+
+      function saveCloudSyncUrl() {
+        var url = document.getElementById('cloudSyncUrlInput').value.trim();
+        if (!url) {
+          safeStorage.removeItem(CLOUD_URL_STORAGE_KEY);
+          updateCloudStatusUi();
+          notify('URL Cloud Google Sheets dihapus.', 'info');
+          return;
+        }
+        safeStorage.setItem(CLOUD_URL_STORAGE_KEY, url);
+        updateCloudStatusUi();
+        notify('URL Web App Google Sheets berhasil disimpan!', 'success');
+      }
+
+      function testCloudSyncConnection() {
+        var url = document.getElementById('cloudSyncUrlInput').value.trim() || getActiveCloudSyncUrl();
+        if (!url) {
+          notify('Masukkan URL Web App Google Apps Script terlebih dahulu!', 'warning');
+          return;
+        }
+        safeStorage.setItem(CLOUD_URL_STORAGE_KEY, url);
+        updateCloudStatusUi();
+        notify('Menguji koneksi ke Google Apps Script...', 'info');
+        fetch(url)
+          .then(function (res) {
+            return res.json();
+          })
+          .then(function (data) {
+            if (data && data.status === 'ok') {
+              notify('Koneksi Google Sheets BERHASIL! Ditemukan ' + (data.records ? data.records.length : 0) + ' baris data di sheet.', 'success');
+            } else {
+              notify('Respons diterima, namun pastikan akses Web App diatur ke "Siapa saja / Anyone".', 'warning');
+            }
+          })
+          .catch(function () {
+            notify('Gagal menghubungi URL. Pastikan URL Apps Script sudah di-deploy sebagai Web App (Anyone).', 'error');
+          });
+      }
+
+      function pullCloudDataFromSheets() {
+        var url = document.getElementById('cloudSyncUrlInput').value.trim() || getActiveCloudSyncUrl();
+        if (!url) {
+          notify('Masukkan URL Web App Google Apps Script terlebih dahulu!', 'warning');
+          return;
+        }
+        notify('Menarik data murid dari Google Sheets...', 'info');
+        fetch(url)
+          .then(function (res) {
+            return res.json();
+          })
+          .then(function (data) {
+            if (!data || !Array.isArray(data.records)) {
+              notify('Tidak ada data murid yang terbaca dari Google Sheets.', 'warning');
+              return;
+            }
+            for (var i = 0; i < data.records.length; i++) {
+              var r = data.records[i];
+              if (!r.nama) continue;
+              var totalLkpd = Number(r.pg || 0) + Number(r.bs || 0) + Number(r.isian || 0);
+              var finalScore = Number(r.final || Math.round(totalLkpd * 0.7 + Number(r.game || 0) * 0.3));
+              upsertRealTeacherRecord({
+                id: r.id || 'CLD-' + r.kelas + '-' + r.absen + '-' + i,
+                nama: r.nama,
+                kelas: r.kelas || '7A',
+                absen: Number(r.absen || 1),
+                pg: Number(r.pg || 0),
+                bs: Number(r.bs || 0),
+                isian: Number(r.isian || 0),
+                game: Number(r.game || 0),
+                final: finalScore,
+                refleksi: r.refleksi || '',
+                catatan: r.catatan || 'Sinkronisasi Cloud Google Sheets'
+              });
+            }
+            renderTeacherTable();
+            notify('Berhasil menarik ' + data.records.length + ' data murid dari Google Sheets!', 'success');
+          })
+          .catch(function () {
+            notify('Gagal menarik data dari Cloud. Periksa URL Web App dan koneksi internet.', 'error');
+          });
+      }
+
+      function copyAppsScriptCode() {
+        var code = document.getElementById('appsScriptSourceBox').value;
+        copyToClipboard(code, 'Kode Google Apps Script');
+      }
+
+      function downloadSelfHtml() {
+        var htmlDoc = '<!DOCTYPE html>\n' + document.documentElement.outerHTML;
+        var activeUrl = getActiveCloudSyncUrl();
+        if (activeUrl) {
+          htmlDoc = htmlDoc.replace(/var EMBEDDED_CLOUD_SYNC_URL = '[^']*';/, "var EMBEDDED_CLOUD_SYNC_URL = '" + activeUrl.replace(/'/g, '') + "';");
+        }
+        triggerDownloadBlob('index.html', htmlDoc, 'text/html;charset=utf-8;');
+        notify('File index.html mandiri siap deploy ke Netlify berhasil diunduh!', 'success');
+      }
+
+      function renderClassAverageSvgChart() {
+        var classes = ['7A', '7B', '7C', '7D', '7E', '7F', '7G'];
+        var stats = classes.map(function (cls) {
+          var list = STATE.teacherRecords.filter(function (r) {
+            return r.kelas === cls;
+          });
+          var avg = 0;
+          if (list.length > 0) {
+            var sum = 0;
+            for (var i = 0; i < list.length; i++) sum += Number(list[i].final || 0);
+            avg = Math.round((sum / list.length) * 10) / 10;
+          }
+          return { cls: cls, count: list.length, avg: avg };
+        });
+
+        var kktpY = 150 - Math.round((75 / 100) * 120);
+        var svg = '<svg viewBox="0 0 640 185" class="w-full min-w-[500px] h-auto" role="img" aria-label="Grafik Rata-Rata Nilai Kelas 7A sampai 7G">';
+        svg += '<line x1="50" y1="30" x2="610" y2="30" stroke="#f1f5f9" />';
+        svg += '<line x1="50" y1="90" x2="610" y2="90" stroke="#f1f5f9" />';
+        svg += '<line x1="50" y1="150" x2="610" y2="150" stroke="#cbd5e1" stroke-width="1.5" />';
+        svg += '<line x1="50" y1="' + kktpY + '" x2="610" y2="' + kktpY + '" stroke="#d97706" stroke-width="1.5" stroke-dasharray="5 4" />';
+        svg += '<text x="44" y="' + (kktpY + 4) + '" text-anchor="end" fill="#d97706" font-size="10" font-weight="800">75</text>';
+        svg += '<text x="44" y="34" text-anchor="end" fill="#64748b" font-size="10" font-weight="700">100</text>';
+        svg += '<text x="44" y="154" text-anchor="end" fill="#64748b" font-size="10" font-weight="700">0</text>';
+
+        for (var i = 0; i < stats.length; i++) {
+          var s = stats[i];
+          var x = 75 + i * 76;
+          var barH = Math.round((s.avg / 100) * 120);
+          var y = 150 - barH;
+          var fill = s.count === 0 ? '#cbd5e1' : s.avg >= 75 ? '#4d7c63' : '#1e3a8a';
+
+          svg += '<rect x="' + x + '" y="30" width="44" height="120" rx="8" fill="#f8fafc" />';
+          if (barH > 0) {
+            svg += '<rect x="' + x + '" y="' + y + '" width="44" height="' + barH + '" rx="8" fill="' + fill + '" />';
+          }
+          svg += '<text x="' + (x + 22) + '" y="' + Math.max(22, y - 6) + '" text-anchor="middle" fill="#0f172a" font-size="11" font-weight="800">' + (s.count > 0 ? s.avg : '-') + '</text>';
+          svg += '<text x="' + (x + 22) + '" y="167" text-anchor="middle" fill="#1e3a8a" font-size="11.5" font-weight="800">' + s.cls + '</text>';
+          svg += '<text x="' + (x + 22) + '" y="180" text-anchor="middle" fill="#64748b" font-size="9.5" font-weight="700">(' + s.count + ')</text>';
+        }
+        svg += '</svg>';
+        document.getElementById('classAverageSvgContainer').innerHTML = svg;
+      }
+
+      function renderTeacherTable() {
+        var classFilter = document.getElementById('teacherClassFilter').value;
+        var kktpFilter = document.getElementById('teacherKktpFilter').value;
+        var searchVal = document.getElementById('teacherSearchName').value.toLowerCase().trim();
+
+        var filtered = STATE.teacherRecords.filter(function (r) {
+          var matchClass = classFilter === 'ALL' || r.kelas === classFilter;
+          var matchKktp =
+            kktpFilter === 'ALL' ||
+            (kktpFilter === 'PASS' && r.final >= 75) ||
+            (kktpFilter === 'REMEDIAL' && r.final < 75);
+          var matchSearch =
+            !searchVal ||
+            r.nama.toLowerCase().indexOf(searchVal) !== -1 ||
+            String(r.absen) === searchVal;
+          return matchClass && matchKktp && matchSearch;
+        });
+
+        // Update 4 KPI Cards
+        var total = filtered.length;
+        var sumFinal = 0;
+        var sumPg = 0;
+        var sumBs = 0;
+        var sumIsian = 0;
+        var sumGame = 0;
+        var passCount = 0;
+        var topStudent = null;
+
+        for (var i = 0; i < filtered.length; i++) {
+          var item = filtered[i];
+          sumFinal += Number(item.final || 0);
+          sumPg += Number(item.pg || 0);
+          sumBs += Number(item.bs || 0);
+          sumIsian += Number(item.isian || 0);
+          sumGame += Number(item.game || 0);
+          if (item.final >= 75) passCount++;
+          if (!topStudent || item.final > topStudent.final) topStudent = item;
+        }
+
+        document.getElementById('statTotalStudents').textContent = String(total);
+        document.getElementById('statScopeText').textContent = classFilter === 'ALL' ? 'Semua Kelas (7A–7G)' : 'Kelas ' + classFilter;
+        document.getElementById('statAverageScore').textContent = total > 0 ? (sumFinal / total).toFixed(1) : '0.0';
+        document.getElementById('statComponentAvgText').textContent =
+          total > 0
+            ? 'PG: ' + (sumPg / total).toFixed(1) + ' • B/S: ' + (sumBs / total).toFixed(1) + ' • Isian: ' + (sumIsian / total).toFixed(1)
+            : 'PG: 0 • B/S: 0 • Isian: 0';
+        document.getElementById('statPassPercentage').textContent = total > 0 ? Math.round((passCount / total) * 100) + '%' : '0%';
+        document.getElementById('statPassCountText').textContent = passCount + ' dari ' + total + ' murid tuntas';
+        document.getElementById('statAvgGameScore').textContent = total > 0 ? (sumGame / total).toFixed(1) : '0.0';
+        document.getElementById('statHighestStudentText').textContent = topStudent
+          ? 'Tertinggi: ' + topStudent.nama + ' (' + topStudent.final + ')'
+          : 'Tertinggi: -';
+
+        renderClassAverageSvgChart();
+
+        var tbody = document.getElementById('teacherRecapTbody');
+        if (filtered.length === 0) {
+          var emptyMsg =
+            STATE.teacherRecords.length === 0
+              ? 'Belum ada data murid tercatat (0 data dummy). Data akan masuk otomatis saat murid menyelesaikan LKPD/Game/Refleksi, membuka Tautan Ajaib (#import=SMPM2K7-...), atau melalui tombol Impor Kode / CSV / Tambah Data Riil Murid.'
+              : 'Tidak ada data murid yang cocok dengan filter kelas/status/pencarian saat ini.';
+
+          tbody.innerHTML =
+            '<tr><td colspan="10" class="py-12 px-6 text-center space-y-3">' +
+            '<div class="text-3xl">📋</div>' +
+            '<div class="font-display font-extrabold text-sm sm:text-base text-slate-800">Tabel Rekapitulasi Kosong (100% Data Riil)</div>' +
+            '<p class="text-xs text-slate-500 max-w-xl mx-auto leading-relaxed">' + escapeHtml(emptyMsg) + '</p>' +
+            '<div class="flex flex-wrap items-center justify-center gap-2 pt-2">' +
+            '<button type="button" data-action="open-add-modal" class="px-4 py-2 rounded-xl bg-muh-navy text-white font-bold text-xs cursor-pointer">➕ Tambah Data Riil Murid</button>' +
+            '<button type="button" data-action="open-import-code" class="px-4 py-2 rounded-xl bg-amber-500 text-white font-bold text-xs cursor-pointer">📥 Impor Kode Laporan Murid</button>' +
+            '<button type="button" data-action="open-csv-modal" class="px-4 py-2 rounded-xl bg-indigo-600 text-white font-bold text-xs cursor-pointer">📂 Impor / Ekspor CSV</button>' +
+            '</div></td></tr>';
+          return;
+        }
+
+        var rowsHtml = '';
+        for (var idx = 0; idx < filtered.length; idx++) {
+          var rec = filtered[idx];
+          var isPass = rec.final >= 75;
+          var isHighlight = rec.id === highlightedRecordId;
+
+          rowsHtml +=
+            '<tr class="' + (isHighlight ? 'bg-blue-50/70' : 'hover:bg-slate-50/80') + ' transition">' +
+            '<td class="py-3 px-4 font-bold text-slate-900">' + escapeHtml(rec.nama) + '</td>' +
+            '<td class="py-3 px-2 text-center"><span class="px-2.5 py-0.5 rounded-lg bg-blue-50 text-muh-navy font-extrabold text-xs">' + escapeHtml(rec.kelas) + '</span></td>' +
+            '<td class="py-3 px-2 text-center font-semibold text-slate-600">' + rec.absen + '</td>' +
+            '<td class="py-3 px-2 text-center font-semibold text-slate-700">' + rec.pg + '</td>' +
+            '<td class="py-3 px-2 text-center font-semibold text-slate-700">' + rec.bs + '</td>' +
+            '<td class="py-3 px-2 text-center font-semibold text-slate-700">' + rec.isian + '</td>' +
+            '<td class="py-3 px-2 text-center font-bold text-indigo-700">' + rec.game + '</td>' +
+            '<td class="py-3 px-3 text-center font-display font-extrabold text-sm text-muh-navy">' + rec.final + '</td>' +
+            '<td class="py-3 px-3"><span class="px-2.5 py-1 rounded-full text-[11px] font-extrabold ' +
+            (isPass ? 'bg-emerald-100 text-emerald-900' : 'bg-amber-100 text-amber-900') + '">' +
+            (isPass ? 'Tuntas ≥ 75' : 'Perlu Pembinaan (< 75)') + '</span></td>' +
+            '<td class="py-3 px-3 text-center no-print">' +
+            '<div class="inline-flex items-center gap-1">' +
+            '<button type="button" data-action="view-detail" data-id="' + escapeHtml(rec.id) + '" class="px-2.5 py-1.5 rounded-lg bg-blue-50 hover:bg-blue-100 text-muh-navy font-bold text-xs cursor-pointer" title="Lihat Detail Refleksi & C1-C6">👁️ Detail</button>' +
+            '<button type="button" data-action="edit-record" data-id="' + escapeHtml(rec.id) + '" class="px-2.5 py-1.5 rounded-lg bg-amber-50 hover:bg-amber-100 text-amber-900 font-bold text-xs cursor-pointer" title="Edit Data">✏️ Edit</button>' +
+            '<button type="button" data-action="delete-record" data-id="' + escapeHtml(rec.id) + '" class="px-2.5 py-1.5 rounded-lg bg-rose-50 hover:bg-rose-100 text-rose-700 font-bold text-xs cursor-pointer" title="Hapus Data">🗑️ Hapus</button>' +
+            '</div></td></tr>';
+        }
+        tbody.innerHTML = rowsHtml;
+      }
+
+      /**
+       * =========================================================================
+       * 16. CENTRALIZED EVENT DELEGATION (100% TOMBOL BERFUNGSI TANPA ERROR)
+       * =========================================================================
+       */
+      function bindCentralEventDelegation() {
+        document.body.addEventListener('click', function (e) {
+          var target = e.target.closest('[data-action]');
+          if (!target) return;
+
+          var action = target.getAttribute('data-action');
+          switch (action) {
+            case 'dismiss-toast':
+              if (target.parentElement) target.parentElement.remove();
+              break;
+            case 'switch-view':
+              switchView(target.getAttribute('data-mode'));
+              break;
+            case 'select-class':
+              selectParallelClass(target.getAttribute('data-cls'));
+              break;
+            case 'save-identity':
+              saveIdentity();
+              break;
+            case 'reset-identity':
+              resetIdentity();
+              break;
+            case 'go-stage':
+              goStage(target.getAttribute('data-stage'));
+              break;
+            case 'select-mood':
+              selectMood(target.getAttribute('data-mood'), false);
+              break;
+            case 'toggle-adab':
+              toggleCheck(target.getAttribute('data-idx'));
+              break;
+            case 'save-mindful-note':
+              saveMindfulNote();
+              break;
+            case 'select-pillar':
+              selectNormPillar(target.getAttribute('data-pillar'));
+              break;
+            case 'select-module':
+              selectModuleTab(target.getAttribute('data-mod'));
+              break;
+            case 'toggle-module-done':
+              toggleModuleDone(target.getAttribute('data-mod'));
+              break;
+            case 'check-norm-sim':
+              checkNormSim(target.getAttribute('data-case'), target.getAttribute('data-choice'));
+              break;
+            case 'filter-lkpd':
+              filterLkpdPart(target.getAttribute('data-part'));
+              break;
+            case 'scroll-question':
+              scrollToQuestion(target.getAttribute('data-qnum'));
+              break;
+            case 'select-mcq':
+              selectMcq(target.getAttribute('data-q'), target.getAttribute('data-opt'));
+              break;
+            case 'select-tf':
+              selectTf(target.getAttribute('data-q'), target.getAttribute('data-val'));
+              break;
+            case 'grade-lkpd':
+              gradeLkpd();
+              break;
+            case 'reset-lkpd':
+              resetLkpd();
+              break;
+            case 'toggle-sound':
+              toggleSound();
+              break;
+            case 'start-game-1':
+              startGame1();
+              break;
+            case 'answer-game-1':
+              handleGame1Answer(target.getAttribute('data-norm'));
+              break;
+            case 'start-game-2':
+              startGame2();
+              break;
+            case 'choose-game-2':
+              chooseGame2(target.getAttribute('data-choice'));
+              break;
+            case 'save-reflection':
+              saveReflection();
+              break;
+            case 'print-cert':
+              window.print();
+              break;
+            case 'share-whatsapp':
+              sendReportViaWhatsApp();
+              break;
+            case 'copy-magic-link':
+              copyMagicLinkForTeacher();
+              break;
+            case 'copy-report-code':
+              copyStudentReportCode();
+              break;
+            case 'open-add-modal':
+              openAddModal();
+              break;
+            case 'close-add-modal':
+              closeAddModal();
+              break;
+            case 'save-real-student':
+              saveRealStudentForm();
+              break;
+            case 'view-detail':
+              openStudentDetailModal(target.getAttribute('data-id'));
+              break;
+            case 'close-detail-modal':
+              closeStudentDetailModal();
+              break;
+            case 'edit-record':
+              openEditRealStudentModal(target.getAttribute('data-id'));
+              break;
+            case 'delete-record':
+              deleteTeacherRecord(target.getAttribute('data-id'));
+              break;
+            case 'open-import-code':
+              openImportCodeModal();
+              break;
+            case 'close-import-code':
+              closeImportCodeModal();
+              break;
+            case 'process-import-code':
+              processImportedStudentCode();
+              break;
+            case 'open-csv-modal':
+              openCsvModal();
+              break;
+            case 'close-csv-modal':
+              closeCsvModal();
+              break;
+            case 'download-csv-template':
+              downloadCsvTemplate();
+              break;
+            case 'export-csv':
+              exportCsv();
+              break;
+            case 'process-csv-import':
+              processCsvImport();
+              break;
+            case 'confirm-clear-all':
+              confirmClearAll();
+              break;
+            case 'close-confirm-clear':
+              closeConfirmClearModal();
+              break;
+            case 'execute-clear-all':
+              executeClearAllTeacherData();
+              break;
+            case 'close-quick-identity':
+              closeQuickIdentityModal();
+              break;
+            case 'submit-quick-identity':
+              submitQuickIdentityModal();
+              break;
+            case 'open-cloud-modal':
+              openCloudSyncModal();
+              break;
+            case 'close-cloud-modal':
+              closeCloudSyncModal();
+              break;
+            case 'switch-gas-tab':
+              switchGasModalTab(target.getAttribute('data-tab'));
+              break;
+            case 'test-cloud-conn':
+              testCloudSyncConnection();
+              break;
+            case 'sync-gas-pull':
+            case 'pull-cloud-data':
+              pullCloudDataFromSheets();
+              break;
+            case 'bulk-upsert-gas':
+              bulkUpsertToGasSheets();
+              break;
+            case 'flush-gas-queue':
+              flushGasOfflineQueue(true);
+              break;
+            case 'copy-apps-script':
+              copyAppsScriptCode();
+              break;
+            case 'download-code-gs':
+              downloadCodeGsFile();
+              break;
+            case 'download-html':
+              downloadSelfHtml();
+              break;
+            case 'close-clipboard-modal':
+              closeClipboardModal();
+              break;
+          }
+        });
+
+        // Delegated input & change events
+        document.body.addEventListener('input', function (e) {
+          var t = e.target;
+          if (!t) return;
+          if (t.id === 'stuName' || t.id === 'stuAbsen') {
+            syncIdentityInput();
+          } else if (t.id === 'mindfulReflectionInput') {
+            STATE.mindful.note = t.value;
+            saveStudentDraft();
+          } else if (t.hasAttribute('data-isian-idx')) {
+            recordIsian(t.getAttribute('data-isian-idx'), t.value);
+          } else if (t.id === 'refleksiBermakna' || t.id === 'aksiNyataMingguIni') {
+            syncCertificatePreview();
+          } else if (t.id === 'teacherSearchName') {
+            renderTeacherTable();
+          } else if (t.id === 'realInputPg' || t.id === 'realInputBs' || t.id === 'realInputIsian' || t.id === 'realInputGame') {
+            updateRealModalPreview();
+          }
+        });
+
+        document.body.addEventListener('change', function (e) {
+          var t = e.target;
+          if (!t) return;
+          if (t.id === 'stuClass') {
+            selectParallelClass(t.value);
+          } else if (t.id === 'teacherClassFilter' || t.id === 'teacherKktpFilter') {
+            renderTeacherTable();
+          } else if (t.id === 'confirmClearCheckbox') {
+            var btn = document.getElementById('executeClearAllBtn');
+            if (btn) btn.disabled = !t.checked;
+          } else if (t.id === 'csvFileInput' && t.files && t.files[0]) {
+            handleCsvFileUpload(t.files[0]);
+          }
+        });
+      }
+
+      // Ekspos fungsi utama ke window sebagai cadangan langsung
+      window.switchView = switchView;
+      window.saveIdentity = saveIdentity;
+      window.resetIdentity = resetIdentity;
+      window.goStage = goStage;
+      window.gradeLkpd = gradeLkpd;
+      window.resetLkpd = resetLkpd;
+      window.toggleSound = toggleSound;
+      window.startGame1 = startGame1;
+      window.startGame2 = startGame2;
+      window.saveReflection = saveReflection;
+      window.openAddModal = openAddModal;
+      window.openImportCodeModal = openImportCodeModal;
+      window.openCsvModal = openCsvModal;
+      window.openCloudSyncModal = openCloudSyncModal;
+      window.downloadSelfHtml = downloadSelfHtml;
+      window.exportCsv = exportCsv;
+      window.confirmClearAll = confirmClearAll;
+
+      /**
+       * =========================================================================
+       * 17. INISIALISASI APLIKASI (AMAN TERHADAP ERROR ANTAR-KOMPONEN)
+       * =========================================================================
+       */
+      function initApp() {
+        bindCentralEventDelegation();
+
+        try { loadTeacherRecords(); } catch (e) {}
+        try { updateCloudStatusUi(); } catch (e) {}
+        try { flushGasOfflineQueue(false); } catch (e) {}
+        try { renderAdabChecklist(); } catch (e) {}
+        try { renderNormPillars(); } catch (e) {}
+        try { selectModuleTab(1); } catch (e) {}
+        try { renderMiniSimCases(); } catch (e) {}
+        try { restoreStudentDraft(); } catch (e) {}
+        try { renderAllLKPDQuestions(); } catch (e) {}
+        try { renderStageSendTeacherBoxes(); } catch (e) {}
+        try { syncCertificatePreview(); } catch (e) {}
+        try { renderTeacherTable(); } catch (e) {}
+        try { startSoftLkpdTimer(); } catch (e) {}
+        try { checkMagicImportUrlOnLoad(); } catch (e) {}
+
+        window.addEventListener('online', function () {
+          flushGasOfflineQueue(true);
+        });
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initApp);
+      } else {
+        initApp();
+      }
+    })();
+  </script>
+</body>
+</html>
